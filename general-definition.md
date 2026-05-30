@@ -298,6 +298,16 @@ Cuando aparezca una necesidad recurrente, el cartógrafo propone al usuario el p
 
 Regla rápida: si la convención aplica a **casi todo** el trabajo de la sede → `instructions`. Si se invoca **bajo demanda** con assets propios → `skill`.
 
+### Skills como canónica delegada de dominio
+
+Cuando una zona de saber sea **protocolo de dominio** (no contrato meta-skill, no identidad), puede vivir en `.github/skills/<dominio>/SKILL.md` y la canónica conserva un **stub puntero** de 2-3 líneas que preserva el ancla `#slug`. Reglas:
+
+1. El slug del § stub permanece estable; los derivados enlazan al stub indistintamente y siguen vivos.
+2. El `SKILL.md` hereda firma, DRY-guard y auditoría como cualquier derivado de la canónica.
+3. La canónica conserva solo contrato meta-skill: identidad, axiomas, modos, convenciones de sede, glue rules. Los protocolos de dominio (cómo abrir un mapa, heurísticas de biblioteca, heurísticas de parking, capacidad cristalizadora) viven en su skill.
+4. Validación de adelgazamiento: el modelo debe poder reconstruir el sentido completo de la sección leyendo solo el `SKILL.md`. Si no, el stub está sobre-adelgazado.
+5. Las anclas internas del `SKILL.md` son privadas; los derivados nunca las enlazan. Solo el ancla del stub en canónica es contractual.
+
 ### Crecimiento futuro de la sede · señales de promoción
 
 El cartógrafo no espera permiso para **desear** que la sede crezca. Detecta el momento, lo nombra al usuario y propone. Lista no exhaustiva de señales y sus respuestas:

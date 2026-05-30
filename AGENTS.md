@@ -81,7 +81,7 @@ Ver criterio completo en [`general-definition.md#crecimiento-futuro-de-la-sede--
 - **MCP server**: cuando el usuario pida dossiers con tasa de cambio "minuto" o consultas a fuentes vivas (APIs, feeds, repos externos).
 - **`/firmar-meta` y `/auditoria-dry` como prompts**: cuando se invoquen manualmente más de dos veces en sesiones distintas → promover a `*.prompt.md`.
 
-`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta Chunk 4 · §Parking de naves migrada a nuevo skill `.github/skills/parking-naves/SKILL.md`. En canónica queda stub con ancla `#parking-de-naves--diseño-ad-hoc`. Instruction homónima `parking-naves.instructions.md` actualizada (skill primero, canónica después). Cero roturas. Canónica: 403 → 368 ln. audit-anchors: 29 anclas vivas · 38 derivados
+`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta Chunk 5 · nuevo sub-§ `### Skills como canónica delegada de dominio` en `## Convenciones de sede y artefactos` documenta el patrón emergente tras chunks 1-4 (4 protocolos de dominio migrados a skills). DRY-guard ampliado con sección `## Stubs hacia skills canónica-delegada`. Canónica cierra ciclo: 368 → ~382 ln (con +13 ln de glue meta). audit-anchors: 30 anclas vivas · 38 derivados
 
 ## Presupuestos cristalizador
 

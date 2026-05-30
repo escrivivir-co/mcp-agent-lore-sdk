@@ -31,6 +31,15 @@ Cualquier edición que toque:
 
 Si una edición de heading no encuentra usos en ningún derivado, reportarlo igual. Cero ruido ≠ cero efecto: puede indicar que falta un derivado que sí debería existir.
 
+## Stubs hacia skills canónica-delegada
+
+Algunos headings de la canónica son **stubs puntero** hacia un `SKILL.md` que aloja el contenido completo (patrón documentado en [`general-definition.md#skills-como-canónica-delegada-de-dominio`](../../general-definition.md#skills-como-canónica-delegada-de-dominio)). Al editar uno de esos stubs:
+
+1. Si solo se edita el stub (reformular puntero), no hay efecto sobre derivados; basta con que el slug del heading no cambie.
+2. Si se renombra el heading del stub, además del protocolo de arriba hay que actualizar el `SKILL.md` correspondiente para reflejar el nuevo nombre en su título si lo lleva.
+3. Si se quiere mover contenido del skill **de vuelta a la canónica** (revertir la delegación), revisar primero que ningún derivado dependa del slug actual con expectativa de delegación; documentar el cambio en `auditoría-dry-última`.
+4. El `audit-anchors.mjs` no valida hoy la existencia del `SKILL.md` referenciado por un stub. Si esa validación se necesita, ampliar el hook (mantener la propiedad: exit-code 0 = OK).
+
 ## Validador determinista (obligatorio)
 
 Antes de declarar cerrada cualquier edición sobre la canónica o sobre un derivado, ejecutar:
