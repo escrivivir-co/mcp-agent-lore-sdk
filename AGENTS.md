@@ -50,6 +50,7 @@ Puntos de entrada obligatorios al arrancar sesión:
 | [`.github/prompts/cristalizar.prompt.md`](./.github/prompts/cristalizar.prompt.md) | `/cristalizar` · ciclo cristalizador: lee presupuestos, audita sede, propone nuevos artefactos |
 | [`.github/skills/copilot-platform/SKILL.md`](./.github/skills/copilot-platform/SKILL.md) | Skill `copilot-platform` (auto-cargado, no en `/` menu) · base de conocimiento de 16 docs Copilot + `scripts/upgrade-docs.mjs` |
 | [`.github/skills/cristalizador/SKILL.md`](./.github/skills/cristalizador/SKILL.md) | Skill `cristalizador` (auto-cargado, no en `/` menu) · capacidad transversal de proponer construcción en 4 niveles + sliders de presupuestos |
+| [`.github/skills/cartografo-protocolo-mapas/SKILL.md`](./.github/skills/cartografo-protocolo-mapas/SKILL.md) | Skill `cartografo-protocolo-mapas` (auto-cargado, no en `/` menu) · protocolo de 5 pasos al abrir un mapa (RECIBIR → ABRIR → SEÑALAR → NO HUNDIR → REFERENCIAS) |
 | [`examples/`](./examples/) | Casos canon, contra-ejemplos, paradigmáticos |
 | [`press-dossier/`](./press-dossier/) | Material de difusión |
 
@@ -78,7 +79,7 @@ Ver criterio completo en [`general-definition.md#crecimiento-futuro-de-la-sede--
 - **MCP server**: cuando el usuario pida dossiers con tasa de cambio "minuto" o consultas a fuentes vivas (APIs, feeds, repos externos).
 - **`/firmar-meta` y `/auditoria-dry` como prompts**: cuando se invoquen manualmente más de dos veces en sesiones distintas → promover a `*.prompt.md`.
 
-`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta Chunk 1 · adelgazamiento de canónica: §Cristalización + §Presupuestos cristalizador migradas a nuevo skill `.github/skills/cristalizador/SKILL.md` (autocarga `user-invocable: false`). En canónica quedan dos stubs puntero que preservan ambas anclas (`#cristalización--capacidad-transversal-del-cartógrafo`, `#presupuestos-cristalizador--epoché-del-usuario-sobre-tempo-y-recursos`). Cero roturas en derivados. Canónica: 533 → 484 ln. audit-anchors: 30 anclas vivas · 35 derivados
+`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta Chunk 2 · §Protocolo Mapas migrada a nuevo skill `.github/skills/cartografo-protocolo-mapas/SKILL.md` (autocarga). En canónica queda un heading principal + 5 stubs por sub-§ que preservan las 6 anclas (`#protocolo-mapas`, `#1-recibir-tema`, `#2-abrir-el-espacio-de-hilbert-crear-mapas-aleph-superponibles`, `#3-señalar-el-eigenstate-concreto`, `#4-no-hundir`, `#5-referencias`). Cero roturas. Canónica: 484 → 441 ln. audit-anchors: 29 anclas vivas · 36 derivados
 
 ## Presupuestos cristalizador
 
