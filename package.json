@@ -1,0 +1,36 @@
+{
+  "name": "@aleph-scriptorium/agent-lore-sdk",
+  "version": "0.1.0",
+  "description": "AGENT-TEMPLATES-1.0.0 + BOT-HILBERT-2.0.0",
+  "type": "module",
+  "scripts": {
+    "public:web": "http-server public -a 127.0.0.1 -p 4173 -c-1",
+    "public:web:open": "http-server public -a 127.0.0.1 -p 4173 -c-1 -o",
+    "audit:anchors": "node .github/hooks/audit-anchors.mjs",
+    "validate": "npm run audit:anchors"
+  },
+  "keywords": [
+    "aleph-scriptorium",
+    "bot-hilbert",
+    "copilot-customizations",
+    "agent-skills",
+    "hilbert-maps",
+    "dossiers",
+    "ships",
+    "public-web"
+  ],
+  "author": "Escrivivir.co",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "https://github.com/escrivivir-co/aleph-scriptorium/tree/integration/beta/scriptorium/bot-hilbert",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escrivivir-co/aleph-scriptorium.git",
+    "directory": "scriptorium/bot-hilbert"
+  },
+  "bugs": {
+    "url": "https://github.com/escrivivir-co/aleph-scriptorium/issues"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

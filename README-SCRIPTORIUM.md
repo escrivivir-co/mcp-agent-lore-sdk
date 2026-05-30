@@ -1,15 +1,23 @@
 # Integración con ALEPH Scriptorium
 
 > **Submódulo**: #18  
-> **Épica**: AGENT-TEMPLATES-1.0.0  
-> **Fecha integración**: 2026-01-04
+  "name": "@aleph-scriptorium/agent-lore-sdk",
+  "version": "0.1.0",
+  "description": "AGENT-TEMPLATES-1.0.0 + BOT-HILBERT-2.0.0",
+> **Fecha integración**: 2026-06-04
 
----
+Doble superficie AgentLoreSDK;
 
-## Arquitectura del Submódulo
+| Superficie | Rutas | Uso |
+|---|---|---|
+| **AGENT-TEMPLATES** | `cli-tool/components/**` | Catálogo de plantillas de agentes, commands, hooks, MCPs y skills para Scriptorium. |
+| **BOT-HILBERT** | `general-definition.md`, `AGENTS.md`, `.github/**` | Cartógrafo de espacios temáticos con agentes, prompts, instructions, hooks y skills de VS Code Copilot. |
+
+
+## Arquitectura del Submódulo AGENT-TEMPLATES-1.0.0
 
 ```
-AgentLoreSDK/
+AgentLoreSDK/ nothing.zip
 └── cli-tool/
     └── components/
         ├── agents/      # 25 categorías, 165 plantillas
@@ -20,17 +28,13 @@ AgentLoreSDK/
 
 **Total**: 61 categorías, 637+ plantillas
 
----
-
-## Tecnologías
+### Tecnologías
 
 - Markdown templates
 - YAML frontmatter para metadatos
 - Compatible con Claude Code / Copilot
 
----
-
-## Mapeo Ontológico
+### Mapeo Ontológico
 
 | AgentLoreSDK | Scriptorium |
 |--------------|-------------|
@@ -39,9 +43,7 @@ AgentLoreSDK/
 | `skills/` | Capacidades fusionables |
 | `templates/` | Scaffolding de proyectos |
 
----
-
-## Integración con Agent Creator
+### Integración con Agent Creator DE LA SUITE SCRIPTORIUM (solo disponible si esta codebase está conectada al Scriptorium)
 
 El plugin `agent-creator` usa este submódulo para:
 
@@ -49,7 +51,7 @@ El plugin `agent-creator` usa este submódulo para:
 2. **Índice navegable** en `.github/plugins/agent-creator/index/catalog.json`
 3. **Fusión de plantillas** con agentes base del Scriptorium
 
-### Flujo de Uso
+#### Flujo de Uso
 
 ```
 Usuario: "Quiero crear agente de seguridad"
@@ -69,13 +71,13 @@ Fusiona plantilla con @blueflag (o base elegida)
 
 ---
 
-## Dependencias Externas
+### Dependencias Externas
 
 - Ninguna (solo archivos Markdown)
 
 ---
 
-## Supuestos y Gaps
+### Supuestos y Gaps
 
 | Gap | Descripción | Estado |
 |-----|-------------|--------|
@@ -85,9 +87,34 @@ Fusiona plantilla con @blueflag (o base elegida)
 
 ---
 
-## Referencias
+### Referencias
 
 - **Fuente**: [escrivivir-co/mcp-agent-lore-sdk](https://github.com/escrivivir-co/mcp-agent-lore-sdk)
 - **Plugin**: `.github/plugins/agent-creator/`
 - **Índice**: `.github/plugins/agent-creator/index/catalog.json`
 - **Sesión**: `ARCHIVO/DISCO/SESIONES_COTRABAJO/2026-01-04_agent-creator-claude-templates/`
+
+
+## Arquitectura del Submódulo BOT-HILBERT-2.0.0
+
+.github/copilot-instructions.md
+
+La canónica vive en [general-definition.md](general-definition.md). El `AGENTS.md` enlaza sus anclas y registra los artefactos vivos de la sede. El bloque v2.0.0 trae estos modos:
+
+- **Biblioteca**: crea o extiende dossiers `dossier-<tema>-v00-<tag>/`.
+- **Parking/Taller**: navega dossiers existentes y registra itinerarios.
+- **Volátil**: respuesta cartográfica volátil en chat.
+
+Validación de anclas canónicas:
+
+```bash
+npm run validate
+```
+
+## Contribuir
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licencia
+
+Este bloque hereda la [Animus Iocandi Public License](LICENSE.md) de Aleph Scriptorium.

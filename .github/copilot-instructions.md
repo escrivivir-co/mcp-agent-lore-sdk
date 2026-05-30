@@ -1,3 +1,17 @@
+Contenido de la codebase: README-SCRIPTORIUM.md
+
+## Arquitectura del Submódulo AGENT-TEMPLATES-1.0.0
+```
+AgentLoreSDK/ nothing.zip
+└── cli-tool/
+    └── components/
+        ├── agents/      # 25 categorías, 165 plantillas
+        ├── commands/    # 20 categorías, 217 plantillas
+        ├── skills/      # 10 categorías, 255 plantillas
+        └── templates/   # 6 lenguajes (go, java, js, python, ruby, rust)
+```
+
+## Arquitectura del Submódulo BOT-HILBERT-2.0.0
 - Main proxy to find or update canonical info is general-definition.md
 - Other main entry-points AGENTS.md glued together to .github
 
