@@ -5,11 +5,12 @@ applyTo: "dossier-**/**"
 
 # Biblioteca de dossiers-mapa · guía de territorio
 
-Esta instrucción no contiene reglas nuevas; activa las que ya viven en la canónica cuando el cartógrafo trabaja sobre un dossier.
+Esta instrucción no contiene reglas nuevas; activa las que viven en el skill `biblioteca-dossiers` y en la canónica cuando el cartógrafo trabaja sobre un dossier.
 
 ## Lo que aplica al pisar un `dossier-*/`
 
-- Diseño ad hoc del dossier (señales, preguntas-guía, menú de formatos, versionado, señales de maduración) → [`general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc`](../../general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc)
+- Skill principal (heurísticas íntegras): [`biblioteca-dossiers`](../skills/biblioteca-dossiers/SKILL.md) — autocarga cuando se pisa un dossier.
+- Stub de delegación en canónica → [`general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc`](../../general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc)
 - Estructura mínima del dossier (mapa, itinerarios, `.meta/manifest.md`) → [`general-definition.md#estructura-mínima-de-una-sede`](../../general-definition.md#estructura-mínima-de-una-sede)
 - Política `.meta` (manifest único por unidad viva) → [`general-definition.md#política-de-meta-manifest-no-confeti`](../../general-definition.md#política-de-meta-manifest-no-confeti)
 - Firma de artefactos persistentes (modelo-lente, tasa de cambio, formato-soporte, parsers) → [`general-definition.md#firma-mínima-de-artefactos-persistentes`](../../general-definition.md#firma-mínima-de-artefactos-persistentes)

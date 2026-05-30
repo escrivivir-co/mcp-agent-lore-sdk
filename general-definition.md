@@ -1,4 +1,4 @@
-]633;E;sed -n '1,118p' general-definition.md;6c587273-a46c-46b3-8c36-e53e7277353a]633;C# Skill — CARTÓGRAFO
+]633;E;sed -n '1,252p' general-definition.md;6c587273-a46c-46b3-8c36-e53e7277353a]633;C]633;E;sed -n '1,118p' general-definition.md;6c587273-a46c-46b3-8c36-e53e7277353a]633;C# Skill — CARTÓGRAFO
 
 ## Qué es esto
 
@@ -252,45 +252,7 @@ Las **naves** son herramientas reejecutables para abrir dossiers existentes (no 
 
 ### Biblioteca de dossiers-mapa · diseño ad hoc
 
-Esta sección no es un checklist. Es un menú de señales y preguntas-guía que el cartógrafo activa cuando huele que el usuario está dejando de ser one-shot.
-
-**Señales de que toca biblioteca** (basta con una, no hace falta el combo):
-
-- el usuario vuelve a un tema ya tocado;
-- pide "guardar", "mantener", "volver mañana";
-- el tema tiene tasa de cambio rápida (día / minuto) y conviene capturar snapshots versionados;
-- hay varios sub-temas que el usuario quiere comparar lado a lado;
-- el modelo intuye que la sesión va a generar más material del que cabe en una ventana de contexto.
-
-**Preguntas que el cartógrafo lanza antes de escribir un solo byte de dossier**:
-
-- ¿un único dossier que crece, o varios pequeños federados por un `catalogo.md` raíz?
-- ¿qué soporte literario propone el tema? (tabla, ensayo, poema, grafo, dataset, sistema de ecuaciones, partitura, diapos, cómic, libreto…). Una vez consensuado, **comprometerse** con él en esa versión.
-- ¿`itinerarios/` por fecha-sesión, por sub-tema, o por viajero?
-- ¿persistencia 0% / 50% / 100% meta? (gradar con [`#política-de-meta-manifest-no-confeti`](#política-de-meta-manifest-no-confeti)).
-- versionado: ¿`v00 → v01` cuando cambia el soporte literario o el axioma rector; **fork** a `dossier-<tema>-v00-<tag-bis>/` cuando el sub-tema rompe la coherencia del padre?
-
-**Menú abierto de formatos-soporte ↔ parser pareja** (sugestivo, no cerrado; el cartógrafo es libre de inventar el suyo):
-
-| Soporte del mapa | Parser / nave pareja típica |
-|---|---|
-| tabla `mapa.md` | export CSV / JSON; nave de filtrado y orden |
-| grafo `mapa.graph.json` | visualizador D3 / cytoscape / three.js |
-| ensayo `mapa.md` con anclas densas | índice de anclas + buscador full-text |
-| poema / glosario denso | tarjetero (anki-like) + leyenda expandida |
-| dataset `mapa.csv` / `mapa.parquet` | notebook exploratorio + dashboard |
-| sistema de ecuaciones | sympy / desmos / geogebra embebido |
-| partitura / audio | reproductor + transcripción sincronizada |
-| diapos / cómic / libreto | reveal.js / lector de viñetas / lectura escénica |
-
-**Señales de maduración** (cuando promover convención emergente):
-
-- un mismo patrón aparece en ≥2 dossiers → candidato a `*.instructions.md` con `applyTo` quirúrgico;
-- un mismo asset (plantilla, parser, dataset semilla) se copia entre dossiers → candidato a `SKILL.md` con su carpeta;
-- una validación se repite a mano antes de cada commit (firma, anclas, manifest) → candidato a hook;
-- una fuente externa empieza a ser necesaria en cada apertura → candidato a MCP server.
-
-Puente al [`#mapa-de-customizations-cuando-la-sede-vive-en-vs-code--agentes-de-ia`](#mapa-de-customizations-cuando-la-sede-vive-en-vs-code--agentes-de-ia).
+Heurísticas delegadas al skill [`biblioteca-dossiers`](./.github/skills/biblioteca-dossiers/SKILL.md), autocargado por el modelo cuando entra a un `dossier-*/`. El stub conserva el ancla `#biblioteca-de-dossiers-mapa--diseño-ad-hoc`.
 
 ### Parking de naves · diseño ad hoc
 
