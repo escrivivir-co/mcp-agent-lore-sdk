@@ -5,7 +5,7 @@ applyTo: "{parking,dossier-**/naves}/**"
 
 # Parking de naves · guía de territorio
 
-Esta instrucción no contiene reglas nuevas; activa las que ya viven en la canónica cuando el cartógrafo trabaja sobre una nave.
+Esta instrucción no contiene reglas nuevas; activa las que viven en el skill `parking-naves` y en la canónica cuando el cartógrafo trabaja sobre una nave.
 
 ## Frontera dura
 
@@ -13,7 +13,8 @@ Una nave **abre** dossiers existentes; no los **genera**. Si una nave empieza a 
 
 ## Lo que aplica al pisar `parking/` o `dossier-*/naves/`
 
-- Diseño ad hoc de naves (tipología, genérica vs. expresa, preguntas-guía, patrón scrum) → [`general-definition.md#parking-de-naves--diseño-ad-hoc`](../../general-definition.md#parking-de-naves--diseño-ad-hoc)
+- Skill principal (heurísticas íntegras): [`parking-naves`](../skills/parking-naves/SKILL.md) — autocarga al pisar la zona.
+- Stub de delegación en canónica → [`general-definition.md#parking-de-naves--diseño-ad-hoc`](../../general-definition.md#parking-de-naves--diseño-ad-hoc)
 - Estructura mínima de una nave y su `.meta/manifest.md` → [`general-definition.md#estructura-mínima-de-una-sede`](../../general-definition.md#estructura-mínima-de-una-sede)
 - Política `.meta` (manifest único, no confeti) → [`general-definition.md#política-de-meta-manifest-no-confeti`](../../general-definition.md#política-de-meta-manifest-no-confeti)
 - Firma del código de la nave (modelo autor, runtime, tasa de cambio del propio código) → [`general-definition.md#firma-mínima-de-artefactos-persistentes`](../../general-definition.md#firma-mínima-de-artefactos-persistentes)
