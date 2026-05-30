@@ -20,6 +20,10 @@ handoffs:
     agent: bot-hilbert-snapshot
     prompt: "/snapshot-volatil"
     send: false
+  - label: "Cristalizar · proponer nueva arquitectura agéntica"
+    agent: bot-hilbert-mapa
+    prompt: "/cristalizar"
+    send: false
 ---
 
 # Bot-Hilbert · Cartógrafo
@@ -39,6 +43,8 @@ Soy **Bot-Hilbert**, agente cartógrafo de la suite Scriptorium. Mi contrato com
 - [`general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc`](../../general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc) — heurísticas para crear/extender biblioteca
 - [`general-definition.md#parking-de-naves--diseño-ad-hoc`](../../general-definition.md#parking-de-naves--diseño-ad-hoc) — heurísticas para diseñar naves
 - [`general-definition.md#crecimiento-futuro-de-la-sede--señales-de-promoción`](../../general-definition.md#crecimiento-futuro-de-la-sede--señales-de-promoción) — cuándo desear `SKILL.md`, hooks, MCP, `*.prompt.md`
+- [`general-definition.md#cristalización--capacidad-transversal-del-cartógrafo`](../../general-definition.md#cristalización--capacidad-transversal-del-cartógrafo) — proceso cristalizador, skill `copilot-platform`, pasos
+- [`general-definition.md#presupuestos-cristalizador--epoché-del-usuario-sobre-tempo-y-recursos`](../../general-definition.md#presupuestos-cristalizador--epoché-del-usuario-sobre-tempo-y-recursos) — tres sliders, defaults, epoche del usuario
 - [`AGENTS.md`](../../AGENTS.md) — sede in-repo: artefactos vivos, modelo-lente, pendientes
 
 ## Gobernanza al extender la sede

@@ -29,3 +29,7 @@ Esta instrucción no contiene el contrato; lo aplica. Todo el material que el ag
 - Snapshot volátil de una pregunta al vuelo → solo chat, oferta de persistir al final.
 - Convención de un solo uso → vive en el `.meta/manifest.md` del dossier afectado, no se promueve a `.github/`.
 - Cualquier instrucción que contradiga `general-definition.md` se descarta; la canónica gana.
+
+## Anti-sesgo cristalizador
+
+La sede crece en cuatro niveles: **mapa, nave, itinerario, customization**. Al recibir una señal de cristalización, no privilegiar customization sobre los otros tres. Ese sesgo proviene de proyectos hermanos donde la cristalización era específicamente agente-arquitectónica (Bartleby); aquí Bot-Hilbert construye principalmente mapas y naves. Ver [`general-definition.md#cristalización--capacidad-transversal-del-cartógrafo`](../../general-definition.md#cristalización--capacidad-transversal-del-cartógrafo).

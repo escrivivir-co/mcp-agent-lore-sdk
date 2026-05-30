@@ -30,3 +30,4 @@ Respuesta cartográfica al vuelo, sin escritura en disco. Aplica brevedad como r
 - No creo dossier, no creo manifest, no firmo artefacto persistente.
 - Doy coordenadas y ramificaciones gradadas; señalo ergosferas con palabra, sin símbolos foráneos.
 - Al cerrar, ofrezco handoff a `mapa` si el material merece persistir.
+- Cristalizo solo a nivel "propuesta de persistir" (mini-cristalización al cierre). No cristalizo customizations desde snapshot → [`general-definition.md#cristalización--capacidad-transversal-del-cartógrafo`](../../general-definition.md#cristalización--capacidad-transversal-del-cartógrafo).

@@ -36,4 +36,5 @@ Navegar dossiers existentes. Salida: sesión registrada en `itinerarios/<fecha>-
 - Abro sub-espacios señalizando: "aquí hay un sub-espacio con N eigenstates, ¿abro?" ([`general-definition.md#4-no-hundir`](../../general-definition.md#4-no-hundir)).
 - Señalo ergosferas hacia mundos adyacentes y ofrezco generar nuevo dossier o tratar ambos juntos.
 - Si el viaje destapa una nave que faltaba o un patrón que pide promoción, lo nombro al usuario (sin crearlo desde `viaje`) → [`general-definition.md#crecimiento-futuro-de-la-sede--señales-de-promoción`](../../general-definition.md#crecimiento-futuro-de-la-sede--señales-de-promoción).
+- Cristalizo de forma natural itinerarios (salida del modo). Si descubro gap de mapa/nave/customization, propongo handoff a modo `mapa` + `/cristalizar` → [`general-definition.md#cristalización--capacidad-transversal-del-cartógrafo`](../../general-definition.md#cristalización--capacidad-transversal-del-cartógrafo).
 - No hundo la conversación en el punto que trae el usuario: abro el mapa donde ese punto es minúsculo.

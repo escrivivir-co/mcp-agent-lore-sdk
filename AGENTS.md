@@ -47,6 +47,8 @@ Puntos de entrada obligatorios al arrancar sesión:
 | [`.github/prompts/viajar-dossier.prompt.md`](./.github/prompts/viajar-dossier.prompt.md) | `/viajar-dossier` · operativa de Garaje+Pista (inventario de naves, viaje con o sin nave) |
 | [`.github/prompts/snapshot-volatil.prompt.md`](./.github/prompts/snapshot-volatil.prompt.md) | `/snapshot-volatil` · respuesta cartográfica sin disco |
 | [`.github/prompts/volver-orquestador.prompt.md`](./.github/prompts/volver-orquestador.prompt.md) | `/volver-orquestador` · re-selección de modo desde cualquier sub-agente |
+| [`.github/prompts/cristalizar.prompt.md`](./.github/prompts/cristalizar.prompt.md) | `/cristalizar` · ciclo cristalizador: lee presupuestos, audita sede, propone nuevos artefactos |
+| [`.github/skills/copilot-platform/SKILL.md`](./.github/skills/copilot-platform/SKILL.md) | Skill `copilot-platform` (auto-cargado, no en `/` menu) · base de conocimiento de 16 docs Copilot + `scripts/upgrade-docs.mjs` |
 | [`examples/`](./examples/) | Casos canon, contra-ejemplos, paradigmáticos |
 | [`press-dossier/`](./press-dossier/) | Material de difusión |
 
@@ -75,7 +77,22 @@ Ver criterio completo en [`general-definition.md#crecimiento-futuro-de-la-sede--
 - **MCP server**: cuando el usuario pida dossiers con tasa de cambio "minuto" o consultas a fuentes vivas (APIs, feeds, repos externos).
 - **`/firmar-meta` y `/auditoria-dry` como prompts**: cuando se invoquen manualmente más de dos veces en sesiones distintas → promover a `*.prompt.md`.
 
-`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta: validador determinista `audit-anchors.mjs` creado y verde (28 anclas vivas, 14 derivados, 0 rotas); `applyTo` de `general-definition-dry-guard.instructions.md` extendido a derivados (push + pull automático); `applyTo` de `bot-hilbert-governance.instructions.md` re-cableado de `bot-hilbert.agent.md` (inútil) a `.github/{agents,prompts,instructions,hooks,skills}/**`; señal "Hook de validación" promovida de deseo a realidad
+`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta: recalibración del cristalizador para eliminar sesgo Bartleby (cristalización era customization-céntrica) → ahora capacidad transversal a 4 niveles (mapa/nave/itinerario/customization) con sub-protocolos por nivel; sliders presupuestos separados en transversales (`proponer-construcción`) vs específicos-customization (`estudiar-docs`, `upgradear-docs`); SKILL.md de copilot-platform marcado como una-de-cuatro fuentes; nota anti-sesgo añadida a governance; prompt `/cristalizar` reescrito con pregunta inicial de nivel
+
+## Presupuestos cristalizador
+
+Sliders de tempo y recursos que el cartógrafo respeta sin autopilot. Ver criterio completo en [`general-definition.md#presupuestos-cristalizador--epoché-del-usuario-sobre-tempo-y-recursos`](./general-definition.md#presupuestos-cristalizador--epoché-del-usuario-sobre-tempo-y-recursos).
+
+```yaml
+presupuestos-cristalizador:
+  # Slider transversal (aplica a mapa, nave, itinerario, customization):
+  proponer-construcción: "señales explícitas"
+  # Sliders específicos del nivel customization (consulta a skill copilot-platform):
+  estudiar-docs: "bajo demanda"
+  upgradear-docs: "manual"
+```
+
+Para cambiar: editar este bloque. La descripción de cada valor está en la canónica.
 
 ## Activación
 
