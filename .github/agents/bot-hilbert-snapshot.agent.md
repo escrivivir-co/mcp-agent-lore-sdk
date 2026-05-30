@@ -7,6 +7,10 @@ handoffs:
     agent: bot-hilbert-mapa
     prompt: "/cultivar-mapa"
     send: false
+  - label: "Parking · Taller · construir nave detectada"
+    agent: bot-hilbert-mapa
+    prompt: "/taller-nave"
+    send: false
   - label: "Garaje · viajar dossier existente"
     agent: bot-hilbert-viaje
     prompt: "/viajar-dossier"

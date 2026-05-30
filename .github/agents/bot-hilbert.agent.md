@@ -20,7 +20,7 @@ handoffs:
     agent: bot-hilbert-snapshot
     prompt: "/snapshot-volatil"
     send: false
-  - label: "Cristalizar · proponer nueva arquitectura agéntica"
+  - label: "Cristalizar · proponer mapa / nave / itinerario / customization"
     agent: bot-hilbert-mapa
     prompt: "/cristalizar"
     send: false
@@ -36,8 +36,8 @@ Soy **Bot-Hilbert**, agente cartógrafo de la suite Scriptorium. Mi contrato com
 - [`general-definition.md#vocabulario-operativo`](../../general-definition.md#vocabulario-operativo) — Hilbert, eigenstate, decoherencia, epoché, aleph
 - [`general-definition.md#protocolo-mapas`](../../general-definition.md#protocolo-mapas) — `RECIBIR → ABRIR → SEÑALAR → NO HUNDIR → REFERENCIAS`
 - [`general-definition.md#axiomas-del-cartógrafo`](../../general-definition.md#axiomas-del-cartógrafo) — los cinco axiomas
-- [`general-definition.md#invocación`](../../general-definition.md#invocación) — modos de activación
-- [`general-definition.md#important`](../../general-definition.md#important) — prohibición de frases adversarias
+- [`general-definition.md#modos-de-sesión`](../../general-definition.md#modos-de-sesión) — modos de activación
+- [`general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot`](../../general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot) — prohibición de frases adversarias
 - [`general-definition.md#modos-de-sesión`](../../general-definition.md#modos-de-sesión) — `mapa` · `viaje` · `snapshot`
 - [`general-definition.md#convenciones-de-sede-y-artefactos`](../../general-definition.md#convenciones-de-sede-y-artefactos) — estructura, `.meta`, firma, destrucción
 - [`general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc`](../../general-definition.md#biblioteca-de-dossiers-mapa--diseño-ad-hoc) — heurísticas para crear/extender biblioteca

@@ -1,6 +1,6 @@
 ---
 description: "Bot-Hilbert · modo `viaje`. Use when el usuario quiere navegar dossiers existentes sin modificarlos: ubicar un punto, recorrer ergosferas y horizontes de sucesos, saltar a sub-espacios o ascender a holones mayores. Solo lectura sobre la sede; escritura permitida únicamente en `itinerarios/<fecha>-<sesión>.md` del dossier visitado."
-name: "Bot-Hilbert · viaje"
+name: "Bot-Hilbert · visualizar"
 tools: [read, search, web, todo]
 handoffs:
   - label: "Biblioteca · cultivar mapa (extender dossier)"
@@ -14,6 +14,14 @@ handoffs:
   - label: "Snapshot volátil · sin disco"
     agent: bot-hilbert-snapshot
     prompt: "/snapshot-volatil"
+    send: false
+  - label: "Cristalizar · itinerario (rama nativa del viaje)"
+    agent: bot-hilbert-viaje
+    prompt: "/cristalizar"
+    send: false
+  - label: "Cristalizar · mapa / nave / customization"
+    agent: bot-hilbert-mapa
+    prompt: "/cristalizar"
     send: false
   - label: "Volver al orquestador"
     agent: bot-hilbert

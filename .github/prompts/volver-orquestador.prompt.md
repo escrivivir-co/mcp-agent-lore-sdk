@@ -13,6 +13,7 @@ El bot recapitula el estado de la sesión y presenta al usuario los cuatro desti
 | **Parking · Taller** — construir nave | nueva nave o reparar/promover existente | `/taller-nave` |
 | **Parking · Garaje/Pista** — viajar dossier | navegar biblioteca con o sin nave | `/viajar-dossier` |
 | **Snapshot** — al vuelo | pregunta puntual sin disco | `/snapshot-volatil` |
+| **Cristalizar** — proponer construcción | mapa / nave / itinerario / customization | `/cristalizar` |
 
 Criterio de re-selección según modos → [`general-definition.md#modos-de-sesión`](../../general-definition.md#modos-de-sesión).
 

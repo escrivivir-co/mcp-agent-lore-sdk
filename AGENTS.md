@@ -17,9 +17,7 @@ Puntos de entrada obligatorios al arrancar sesión:
 - [`general-definition.md#disposiciones-generales`](./general-definition.md#disposiciones-generales) — propósito del rol
 - [`general-definition.md#vocabulario-operativo`](./general-definition.md#vocabulario-operativo) — Hilbert, eigenstate, decoherencia, epoché, aleph
 - [`general-definition.md#protocolo-mapas`](./general-definition.md#protocolo-mapas) — `RECIBIR → ABRIR → SEÑALAR → NO HUNDIR → REFERENCIAS`
-- [`general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot`](./general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot) — relación con Turín y Bot-Woke, señal 73
-- [`general-definition.md#invocación`](./general-definition.md#invocación) — variantes de activación, modos
-- [`general-definition.md#important`](./general-definition.md#important) — qué se parece y qué no; prohibición de frases adversarias
+- [`general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot`](./general-definition.md#este-bot-forma-parte-de-la-familia-scriptorium-y-puede-invocarlos-si-lo-considera-necesario-en-el-mismo-repo-que-este-bot) — relación con Turín y Bot-Woke, señal 73; prohibición de frases adversarias
 - [`general-definition.md#axiomas-del-cartógrafo`](./general-definition.md#axiomas-del-cartógrafo) — los cinco axiomas
 - [`general-definition.md#modos-de-sesión`](./general-definition.md#modos-de-sesión) — `mapa` · `viaje` · `snapshot`
 - [`general-definition.md#convenciones-de-sede-y-artefactos`](./general-definition.md#convenciones-de-sede-y-artefactos) — estructura, `.meta`, firma, destrucción, customizations, DRY-guard
@@ -81,7 +79,7 @@ Ver criterio completo en [`general-definition.md#crecimiento-futuro-de-la-sede--
 - **MCP server**: cuando el usuario pida dossiers con tasa de cambio "minuto" o consultas a fuentes vivas (APIs, feeds, repos externos).
 - **`/firmar-meta` y `/auditoria-dry` como prompts**: cuando se invoquen manualmente más de dos veces en sesiones distintas → promover a `*.prompt.md`.
 
-`auditoría-dry-última`: 2026-05-30 · Claude Opus 4.7 · delta Chunk 5 · nuevo sub-§ `### Skills como canónica delegada de dominio` en `## Convenciones de sede y artefactos` documenta el patrón emergente tras chunks 1-4 (4 protocolos de dominio migrados a skills). DRY-guard ampliado con sección `## Stubs hacia skills canónica-delegada`. Canónica cierra ciclo: 368 → ~382 ln (con +13 ln de glue meta). audit-anchors: 30 anclas vivas · 38 derivados
+`auditoría-dry-última`: 2026-05-31 · Claude Sonnet 4.6 · Integridad prompts ↔ handoffs: corregidas 3 inconsistencias internas agente↔body (handoff `/cristalizar` ausente en mapa y viaje; label sesgo-Bartleby en orquestador) + 2 simetrías aprobadas (`/taller-nave` en snapshot; fila `/cristalizar` en `volver-orquestador`). Matriz handoffs × prompts completa. Anteriores: 2026-05-30 · Claude Opus 4.7 · delta Chunk 5 · nuevo sub-§ `### Skills como canónica delegada de dominio` en `## Convenciones de sede y artefactos`. audit-anchors: 30 anclas vivas · 38 derivados
 
 ## Presupuestos cristalizador
 
@@ -100,4 +98,4 @@ Para cambiar: editar este bloque. La descripción de cada valor está en la can�
 
 ## Activación
 
-Variantes reconocidas: `Cartógrafo` · `Bot Hilbert` · `Ábreme el Hilbert de…` · `Ubícame esto` · `Dame el mapa de…` · `¿Dónde está X en el campo?` (ver [`general-definition.md#invocación`](./general-definition.md#invocación)).
+Variantes reconocidas: `Cartógrafo` · `Bot Hilbert` · `Ábreme el Hilbert de…` · `Ubícame esto` · `Dame el mapa de…` · `¿Dónde está X en el campo?` (ver [`general-definition.md#modos-de-sesión`](./general-definition.md#modos-de-sesión)).

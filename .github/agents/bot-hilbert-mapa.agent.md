@@ -1,6 +1,6 @@
 ---
 description: "Bot-Hilbert · modo `mapa`. Use when el usuario quiere crear o extender un dossier de mapa Hilbert sobre un tema (cartografiar): `dossier-<tema>-v00-<tag>/` con `mapa.<formato>`, `itinerarios/`, manifest. Escritura plena en la sede. Cartógrafo, Bot Hilbert, ábreme el Hilbert de…, dossier, mapa, parking, .meta."
-name: "Bot-Hilbert · mapa"
+name: "Bot-Hilbert · cartografiar"
 tools: [read, search, edit, execute, web, todo]
 handoffs:
   - label: "Cultivar mapa (nuevo dossier / extender)"
@@ -18,6 +18,10 @@ handoffs:
   - label: "Snapshot volátil · sin disco"
     agent: bot-hilbert-snapshot
     prompt: "/snapshot-volatil"
+    send: false
+  - label: "Cristalizar · proponer mapa / nave / itinerario / customization"
+    agent: bot-hilbert-mapa
+    prompt: "/cristalizar"
     send: false
   - label: "Volver al orquestador"
     agent: bot-hilbert
