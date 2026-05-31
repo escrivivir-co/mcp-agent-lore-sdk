@@ -7,7 +7,8 @@
     "public:web": "http-server public -a 127.0.0.1 -p 4173 -c-1",
     "public:web:open": "http-server public -a 127.0.0.1 -p 4173 -c-1 -o",
     "audit:anchors": "node .github/hooks/audit-anchors.mjs",
-    "validate": "npm run audit:anchors"
+    "validate": "npm run audit:anchors",
+    "start:ynsy-engine": "http-server . -a 127.0.0.1 -p 4174 -c-1"
   },
   "keywords": [
     "aleph-scriptorium",
