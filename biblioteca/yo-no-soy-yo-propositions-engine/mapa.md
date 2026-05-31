@@ -1,6 +1,15 @@
-# Mapa: Yo no soy yo propositions engine
+# Yo-no-soy-yo Propositions Engine
 
-Este mapa cartografía el debate sobre marxismo, anarquismo, comunas y estado a partir de los hilos originales de redes sociales.
+**Versión:** 0.1.0 | **Autor:** Escrivivir.co  
+**Producto integrado en:** [ALEPH Scriptorium](https://github.com/escrivivir-co/aleph-scriptorium/tree/integration/beta/scriptorium/bot-hilbert) (Submódulo #18)
+
+Este mapa cartografía el debate sobre marxismo, anarquismo, comunas y estado a partir de los hilos originales de redes sociales. 
+
+Es una nave-demostración de las capacidades cartográficas del **Bot Hilbert v2.0.0** (Cartógrafo de espacios temáticos) dentro de la suite Scriptorium y el SDK `@aleph-scriptorium/agent-lore-sdk`.
+
+### 📜 Licencia y Guías FOSS
+Este proyecto es software libre y de código abierto (FOSS). Hereda la **Animus Iocandi Public License** de Aleph Scriptorium (ver `LICENSE.md`).  
+Para guías de contribución y directrices de desarrollo abierto, consulta `CONTRIBUTING.md`.
 
 ---
 
@@ -120,6 +129,53 @@ Extincion final del Estado <----------- zona compartida -------+
                   Anarquismo = antiestatismo + metodo anti-autoritario
 ```
 
+<details>
+<summary><strong>⮟ Aleph 1: Despliegue de los 10 Eigenstates (Thread 1)</strong></summary>
+
+<br>
+
+**1. Comunalismo anti-sustitucionista**
+- **Coordenadas**: Punto de arranque del hilo. Empuja contra el marxismo-leninismo entendido como recambio estatal.
+- **Premisa**: El comunismo no debe limitarse a cambiar un Estado por otro; comuna y comunidad organizada son el núcleo del cambio real.
+
+**2. Estatismo de escala / infraestructura**
+- **Coordenadas**: Tesis funcionalista: la escala genera Estado aunque se use vocabulario comunal.
+- **Premisa**: La infraestructura compleja requiere representación, división de funciones y superestructura; una red de comunas acaba formando algo equivalente a un Estado.
+
+**3. Consejismo soviético**
+- **Coordenadas**: Alternativa a Estado parlamentario y a burocracia de partido; desplaza el eje desde representación electoral hacia delegación/participación obrera.
+- **Premisa**: La infraestructura puede coordinarse mediante consejos obreros de base, federados por barrio, centro de trabajo y niveles sucesivos.
+
+**4. Estado socialista transitorio**
+- **Coordenadas**: Posición marxista-leninista canónica. Comparte con el anarquismo la desaparición final del Estado, pero no el método.
+- **Premisa**: El Estado socialista es necesario, pero como forma histórica transitoria hacia la desaparición del Estado.
+
+**5. Delegación participativa / asamblearia**
+- **Coordenadas**: Bisagra entre comuna, soviet y Estado-comuna. Busca disolver la separación gobernante/gobernado.
+- **Premisa**: La representación no se funda solo en votos, sino en participación directa: si quieres que el gobierno haga algo, participa.
+
+**6. Anarquismo como antiestatismo final**
+- **Coordenadas**: Reducción por telos: identifica anarquismo con objetivo final, no con teoría del medio.
+- **Premisa**: Si el fin último es abolir Estado y sus instituciones asociadas, entonces Marx sería anarquista en sentido teleológico.
+
+**7. Anarquismo como crítica de autoridad y método**
+- **Coordenadas**: Corrige el reduccionismo anterior: método y forma de organización son constitutivos.
+- **Premisa**: Rechaza el uso del Estado, la captura del poder político y la autoridad jerárquica como camino emancipador.
+
+**8. Marx anti-anarquista / ruptura de la Internacional**
+- **Coordenadas**: Eigenstate histórico-documental. Marx no pertenece al linaje anarquista aunque comparta horizonte antiestatal final.
+- **Premisa**: Marx no es anarquista: polemiza con Proudhon, Stirner y Bakunin.
+
+**9. Solarpunk anti-gubernamental / pureza anti-autoritaria**
+- **Coordenadas**: Polo estético-normativo de la imagen raíz. Se aproxima al antiestatismo pero débil ante la infraestructura.
+- **Premisa**: El solarpunk deja de ser real si incluye gobierno, Estado o autoridad central.
+
+**10. Planificación central eco-socialista**
+- **Coordenadas**: Replantea el meme como problema de ejecución material.
+- **Premisa**: La transformación anti-capitalista y ecológica requiere coordinación e inversión a gran escala (planificación central).
+
+</details>
+
 ---
 
 ## 3. Cartografia Thread 2 — Marx, marxismo y "Marx no era marxista"
@@ -172,3 +228,50 @@ Marx no era marxista -> Marx era anarquista.
 
 ### Resultado cartografico
 La frase `Marx no era marxista` significa, en el campo de este hilo: "Marx no aceptaba que su metodo se convirtiera en una etiqueta cerrada, mecanica o doctrinal." Thread 1 corrigio el salto `antiestatismo final -> anarquismo`. Thread 2 corrige el salto `nombre propio -> identidad doctrinal cerrada`.
+
+<details>
+<summary><strong>⮟ Aleph 2: Despliegue de los 10 Eigenstates (Thread 2)</strong></summary>
+
+<br>
+
+**1. Tautología eponímica: Marx = marxista**
+- **Coordenadas**: Punto cómico de entrada. Señala que la pregunta parece obvia, pero es conceptualmente tramposa.
+- **Premisa**: Si el movimiento se llama marxismo, Marx sería marxista por definición; el nombre del autor parece garantizar la identidad doctrinal.
+
+**2. Marx histórico / núcleo teórico**
+- **Coordenadas**: Núcleo primario. No equivale automáticamente a sus codificaciones posteriores.
+- **Premisa**: Marx produce crítica de la economía política y horizonte comunista; no produce un catecismo cerrado llamado marxismo.
+
+**3. Engels como codificador**
+- **Coordenadas**: Primer puente entre Marx y marxismo como tradición reconocible.
+- **Premisa**: Engels sistematiza, populariza y defiende la obra de Marx; convierte partes del núcleo en exposición doctrinal.
+
+**4. Marxismo de la Segunda Internacional**
+- **Coordenadas**: Codificación posterior atravesada por partido, programa y coyuntura.
+- **Premisa**: Marxismo como ortodoxia de partido, programa, organización obrera y lectura histórica general.
+
+**5. Leninismo / marxismo-leninismo**
+- **Coordenadas**: Hereda el problema del Thread 1: usar el Estado para transitar hacia su extinción.
+- **Premisa**: El marxismo se actualiza mediante partido de vanguardia, Estado revolucionario transitorio y organización centralizada.
+
+**6. Marxismo vulgar / dogmático**
+- **Coordenadas**: Blanco directo de la cita "no soy marxista".
+- **Premisa**: La concepción materialista de la historia se usa como llave universal, atajo explicativo o pretexto para no estudiar la historia.
+
+**7. Anti-dogmatismo marxiano**
+- **Coordenadas**: Corrección interna al marxismo. Depura su uso mecánico.
+- **Premisa**: Ser fiel a Marx no es repetir fórmulas, sino investigar formaciones históricas concretas; el método pesa más que la etiqueta.
+
+**8. Sobrecorrección: Marx no era marxista = Marx no cuenta como marxismo**
+- **Coordenadas**: Error simétrico al de la tautología.
+- **Premisa**: La frase se toma literalmente para separar a Marx de cualquier marxismo o para invalidar toda tradición posterior.
+
+**9. Desliz Thread 1: no marxista-leninista = anarquista**
+- **Coordenadas**: Herencia directa del Thread 1. El Thread 2 bloquea este salto.
+- **Premisa**: Si Marx no coincide con el ML posterior, entonces se lo desplaza hacia el anarquismo por compartir horizonte antiestatal.
+
+**10. Metapolítica del shitpost**
+- **Coordenadas**: Subespacio memético.
+- **Premisa**: El chiste no es neutral: arrastra una línea política implícita que puede ser correcta, incorrecta o confusa aunque el formato sea humorístico.
+
+</details>
