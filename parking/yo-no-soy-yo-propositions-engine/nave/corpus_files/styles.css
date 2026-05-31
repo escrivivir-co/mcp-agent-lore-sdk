@@ -1,6 +1,6 @@
 :root {
-  --paper: #f4f1ea;
-  --paper-2: #ebe7dc;
+  --paper: #fff;
+  --paper-2: #fff;
   --ink: #0d0d0d;
   --ink-soft: #2c2c2c;
   --rule: #0d0d0d;
@@ -24,17 +24,7 @@ h1, h2, h3, h4, h5, h6, .stamp, .nav-link, .eyebrow, .pill, .quote-speaker, .sta
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image:
-    radial-gradient(var(--halftone) 1px, transparent 1.2px),
-    repeating-linear-gradient(0deg, rgba(13,13,13,0.04) 0 1px, transparent 1px 4px);
-  background-size: 5px 5px, 100% 4px;
-  mix-blend-mode: multiply;
-  opacity: 0.55;
+  content: none;
 }
 
 .shell {
@@ -85,7 +75,7 @@ p, li, dd, td, th { margin: 0; }
   margin: 0;
   font-size: clamp(2rem, 4vw, 2.8rem);
   line-height: 0.95;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -147,7 +137,7 @@ main { display: grid; gap: 14px; }
   margin: 0 0 8px;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   text-transform: uppercase;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 .hero-note {
   border: 1px dashed var(--ink);
@@ -161,6 +151,45 @@ main { display: grid; gap: 14px; }
   letter-spacing: 0.2em;
   font-size: 11px;
   margin-bottom: 6px;
+}
+.overview-grid {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+.overview-column h2 {
+  margin: 0 0 12px;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.overview-column p {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.overview-column .list {
+  font-size: 13px;
+}
+.overview-column-primary {
+  border-right: 1px dashed var(--ink);
+  padding-right: 20px;
+}
+.archive-column {
+  padding-left: 10px;
+}
+.archive-source {
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+.archive-column blockquote {
+  margin: 0 0 14px;
+  border: 1px dashed var(--ink);
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  background: var(--paper);
+}
+.archive-list {
+  gap: 10px;
 }
 .eyebrow {
   display: inline-block;
@@ -233,7 +262,7 @@ main { display: grid; gap: 14px; }
 }
 .gallery { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .doc-grid,
-.eigen-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.eigen-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
 .quote-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
 .image-card,
@@ -245,6 +274,69 @@ main { display: grid; gap: 14px; }
   background: var(--paper);
   box-shadow: 4px 4px 0 var(--ink);
   padding: 14px;
+}
+.eigen-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: 0;
+  overflow-wrap: anywhere;
+}
+.eigen-body {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.eigen-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-items: start;
+  border-bottom: 1px dashed var(--ink);
+  padding-bottom: 8px;
+  min-width: 0;
+}
+.eigen-meta-item {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  color: var(--ink-soft);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.eigen-meta-item strong {
+  color: var(--ink);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.eigen-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.eigen-premise {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.eigen-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 12px;
+  border-top: 1px dashed rgba(13, 13, 13, 0.3);
+  padding-top: 8px;
+  font-size: 11px;
+  min-width: 0;
+}
+.eigen-footer a {
+  font-weight: 700;
+  text-decoration: underline;
 }
 .image-card { padding: 0; }
 .image-card img {
@@ -563,12 +655,21 @@ th {
   .split,
   .graph-shell { grid-template-columns: 1fr; }
   .detail-card { position: static; }
+  .overview-column-primary {
+    border-right: 0;
+    border-bottom: 1px dashed var(--ink);
+    padding-right: 0;
+    padding-bottom: 18px;
+  }
+  .archive-column { padding-left: 0; }
 }
 
 @media (max-width: 720px) {
   .shell { width: min(100vw - 16px, 100%); margin: 12px auto 30px; }
   .panel, .masthead, nav.nav { box-shadow: 3px 3px 0 var(--ink); }
+  .panel, .masthead { padding: 14px; }
   .nav-link { flex: 1 1 100%; border-right: 0; border-bottom: 1px dashed var(--ink); }
   .nav-link:last-child { border-bottom: 0; }
   .gallery, .doc-grid, .eigen-grid, .quote-grid { grid-template-columns: 1fr; }
+  .eigen-meta { grid-template-columns: 1fr; }
 }
