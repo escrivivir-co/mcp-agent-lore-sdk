@@ -1,5 +1,5 @@
 ---
-description: "Bot-Hilbert · Biblioteca. Activar cuando el usuario quiere crear o extender un dossier de mapa: 'cultivar mapa', 'nuevo dossier', 'ábreme el Hilbert de', 'dossier', 'cartografiar', 'mapa', 'biblioteca'. Encapsula la operativa de la biblioteca de dossiers-mapa (RECIBIR, formato literario, firma, manifest, señales de maduración)."
+description: "Bot Hilbert · Cartógrafo (biblioteca). Activar cuando el usuario quiere crear o extender un dossier de mapa: 'cultivar mapa', 'nuevo dossier', 'ábreme el Hilbert de', 'dossier', 'cartografiar', 'mapa', 'biblioteca'. Encapsula la operativa de la biblioteca de dossiers-mapa (RECIBIR, formato literario, firma, manifest, señales de maduración)."
 mode: agent
 ---
 

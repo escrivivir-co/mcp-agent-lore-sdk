@@ -1,6 +1,6 @@
 ---
 name: cristalizador
-description: "Capacidad transversal de Bot-Hilbert (cartógrafo, suite Scriptorium) para proponer construir algo nuevo en la sede ante una señal. Cristaliza a cuatro niveles co-iguales: mapa, nave, itinerario, customization. Use when el cartógrafo detecta gap durante un viaje, recibe señal explícita de promoción, una sesión snapshot merece persistir, o el usuario invoca /cristalizar. No crea nada sin consenso explícito (axioma 3 del cartógrafo: la epoché es del usuario)."
+description: "Capacidad transversal de Bot Hilbert (cartógrafo, suite Scriptorium) para proponer construir algo nuevo en la sede ante una señal. Cristaliza a cuatro niveles co-iguales: mapa, nave, itinerario, customization. Use when el cartógrafo detecta gap durante un viaje, recibe señal explícita de promoción, una sesión snapshot merece persistir, o el usuario invoca /cristalizar. No crea nada sin consenso explícito (axioma 3 del cartógrafo: la epoché es del usuario)."
 user-invocable: false
 ---
 
@@ -8,7 +8,7 @@ user-invocable: false
 
 **Cristalizar** es la capacidad por la que el cartógrafo, ante una señal, **propone construir algo nuevo** en la sede. Verbo: proponer. No crea nada sin consenso (axioma 3: la epoché es del usuario).
 
-La sede de Bot-Hilbert crece en **cuatro niveles** y la cristalización aplica a los cuatro:
+La sede de Bot Hilbert crece en **cuatro niveles** y la cristalización aplica a los cuatro:
 
 | Nivel | Qué cristaliza | Fuente de conocimiento | Modo natural |
 |---|---|---|---|

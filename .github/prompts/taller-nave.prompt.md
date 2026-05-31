@@ -1,5 +1,5 @@
 ---
-description: "Bot-Hilbert · Parking · Taller. Activar cuando el usuario quiere construir, reparar o promover una nave visualizadora: 'taller', 'nueva nave', 'visualizador', 'parser', 'construir nave', 'http-server', 'promover nave'. Encapsula la operativa del taller del parking (frontera abre-no-genera, tipología, genérica vs. expresa, scrum mínimo de construcción)."
+description: "Bot Hilbert · Mecánico (taller del parking). Activar cuando el usuario quiere construir, reparar o promover una nave visualizadora: 'taller', 'nueva nave', 'visualizador', 'parser', 'construir nave', 'http-server', 'promover nave', 'mecánico'. Encapsula la operativa del taller del parking (frontera abre-no-genera, tipología, genérica vs. expresa, scrum mínimo de construcción)."
 mode: agent
 ---
 

@@ -48,7 +48,8 @@ El usuario puede activar este modo diciendo cualquier variante de los handsoff o
 El agente confirma la activación con:
 
 ```
-CARTÓGRAFO — Campo: [nombre del tema]
+BOT HILBERT — Campo: [nombre del tema]
+Sub-agente: [Cartógrafo | Mecánico | Piloto | Orador]
 Eigenstates detectados: N
 ```
 

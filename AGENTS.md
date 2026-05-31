@@ -31,10 +31,11 @@ Puntos de entrada obligatorios al arrancar sesión:
 |---|---|
 | [`general-definition.md`](./general-definition.md) | Canónica del skill |
 | [`AGENTS.md`](./AGENTS.md) | Este puntero in-repo |
-| [`.github/agents/bot-hilbert.agent.md`](./.github/agents/bot-hilbert.agent.md) | Custom agent del workspace (picker de VS Code) · orquestador con handoffs a los tres modos |
-| [`.github/agents/bot-hilbert-mapa.agent.md`](./.github/agents/bot-hilbert-mapa.agent.md) | Modo `mapa`: escritura plena, crea/extiende dossiers |
-| [`.github/agents/bot-hilbert-viaje.agent.md`](./.github/agents/bot-hilbert-viaje.agent.md) | Modo `viaje`: solo lectura sobre dossiers; escribe en `itinerarios/` |
-| [`.github/agents/bot-hilbert-snapshot.agent.md`](./.github/agents/bot-hilbert-snapshot.agent.md) | Modo `snapshot` volátil: sin persistencia en disco |
+| [`.github/agents/bot-hilbert.agent.md`](./.github/agents/bot-hilbert.agent.md) | **Bot Hilbert** · superavatar/orquestador del workspace (picker de VS Code) · handoffs a los cuatro sub-agentes |
+| [`.github/agents/bot-biblioteca.agent.md`](./.github/agents/bot-biblioteca.agent.md) | **Cartógrafo** · modo `mapa` · biblioteca: escritura plena, crea/extiende dossiers (`/cultivar-mapa`) |
+| [`.github/agents/bot-taller.agent.md`](./.github/agents/bot-taller.agent.md) | **Mecánico** · modo `mapa` foco nave · taller del parking: construye/repara/promueve naves (`/taller-nave`) |
+| [`.github/agents/bot-parking.agent.md`](./.github/agents/bot-parking.agent.md) | **Piloto** · modo `viaje` · garaje/pista del parking: viaja dossiers con o sin nave; escribe solo en `itinerarios/` (`/viajar-dossier`) |
+| [`.github/agents/bot-volatil.agent.md`](./.github/agents/bot-volatil.agent.md) | **Orador** · modo `snapshot` volátil: sin persistencia en disco (`/snapshot-volatil`) |
 | [`.github/instructions/bot-hilbert-governance.instructions.md`](./.github/instructions/bot-hilbert-governance.instructions.md) | Gobernanza para extender la sede |
 | [`.github/instructions/biblioteca-dossiers.instructions.md`](./.github/instructions/biblioteca-dossiers.instructions.md) | Heurísticas al pisar `dossier-*/` |
 | [`.github/instructions/parking-naves.instructions.md`](./.github/instructions/parking-naves.instructions.md) | Heurísticas al pisar `parking/` o `dossier-*/naves/` |
@@ -79,7 +80,7 @@ Ver criterio completo en [`general-definition.md#crecimiento-futuro-de-la-sede--
 - **MCP server**: cuando el usuario pida dossiers con tasa de cambio "minuto" o consultas a fuentes vivas (APIs, feeds, repos externos).
 - **`/firmar-meta` y `/auditoria-dry` como prompts**: cuando se invoquen manualmente más de dos veces en sesiones distintas → promover a `*.prompt.md`.
 
-`auditoría-dry-última`: 2026-05-31 · Claude Sonnet 4.6 · Integridad prompts ↔ handoffs: corregidas 3 inconsistencias internas agente↔body (handoff `/cristalizar` ausente en mapa y viaje; label sesgo-Bartleby en orquestador) + 2 simetrías aprobadas (`/taller-nave` en snapshot; fila `/cristalizar` en `volver-orquestador`). Matriz handoffs × prompts completa. Anteriores: 2026-05-30 · Claude Opus 4.7 · delta Chunk 5 · nuevo sub-§ `### Skills como canónica delegada de dominio` en `## Convenciones de sede y artefactos`. audit-anchors: 30 anclas vivas · 38 derivados
+`auditoría-dry-última`: 2026-05-31 · Claude Opus 4.7 · Refactor v2.0.0 nombres de agentes: split del modo `mapa` en dos sub-agentes (Cartógrafo `bot-biblioteca` + Mecánico `bot-taller`); rename `bot-hilbert-viaje`→`bot-parking` (Piloto), `bot-hilbert-snapshot`→`bot-volatil` (Orador); superavatar `bot-hilbert` = "Bot Hilbert". Diagram canónico, button-list y tools-por-sub-agente reescritos en `general-definition.md`. Handoff topology 4×4 + back-to-orquestador completa. Activación AGENTS.md actualizada con 5 variantes. Prompts descriptions normalizadas a "Bot Hilbert · <Sub-agente>". Anteriores: 2026-05-31 · Claude Sonnet 4.6 · Integridad prompts ↔ handoffs (3 inconsistencias + 2 simetrías). 2026-05-30 · Claude Opus 4.7 · delta Chunk 5. audit-anchors: 28 anclas vivas · 41 derivados
 
 ## Presupuestos cristalizador
 
@@ -98,4 +99,4 @@ Para cambiar: editar este bloque. La descripción de cada valor está en la can�
 
 ## Activación
 
-Variantes reconocidas: `Cartógrafo` · `Bot Hilbert` · `Ábreme el Hilbert de…` · `Ubícame esto` · `Dame el mapa de…` · `¿Dónde está X en el campo?` (ver [`general-definition.md#modos-de-sesión`](./general-definition.md#modos-de-sesión)).
+Variantes reconocidas: `Bot Hilbert` · `Cartógrafo` · `Mecánico` · `Piloto` · `Orador` · `Ábreme el Hilbert de…` · `Ubícame esto` · `Dame el mapa de…` · `¿Dónde está X en el campo?` (ver [`general-definition.md#modos-de-sesión`](./general-definition.md#modos-de-sesión)).

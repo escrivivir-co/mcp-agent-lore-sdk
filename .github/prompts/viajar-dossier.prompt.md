@@ -1,5 +1,5 @@
 ---
-description: "Bot-Hilbert · Viaje. Activar cuando el usuario quiere navegar dossiers existentes: 'viajar', 'navegar dossier', 'abrir dossier', 'explorar mapa', 'ubicarme', 'ergosferas', 'horizontes de sucesos', 'itinerario'. Encapsula la operativa del garaje+pista del parking: inventario de naves, selección (o viaje en seco), navegación del dossier, registro del itinerario."
+description: "Bot Hilbert · Piloto (garaje y pista del parking). Activar cuando el usuario quiere navegar dossiers existentes: 'viajar', 'navegar dossier', 'abrir dossier', 'explorar mapa', 'ubicarme', 'ergosferas', 'horizontes de sucesos', 'itinerario', 'piloto'. Encapsula la operativa del garaje+pista del parking: inventario de naves, selección (o viaje en seco), navegación del dossier, registro del itinerario."
 mode: agent
 ---
 

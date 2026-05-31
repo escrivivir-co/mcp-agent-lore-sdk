@@ -74,43 +74,46 @@ Estos términos no son metáforas. Son el lenguaje de trabajo. Usarlos con preci
 
 ```
 
-Listo. Topología de handoffs instalada:
+Topología de handoffs (Bot Hilbert v2.0.0):
 
 ```
 
-        ┌─────────────────────────┐
-        │   Bot-Hilbert (picker)  │  ← orquestador, full tools
-        └────────┬─────────┬──────┘
-                 │         │
-   ┌─────────────┼─────────┼────────────┐
+   ┌──────────────────────────────────┐
+   │   Bot Hilbert (superavatar)      │  ← orquestador, full tools
+   │   bot-hilbert.agent.md           │
+   └──┬──────────┬──────────┬─────────┘
+      │          │          │         ╲
+      ▼          ▼          ▼          ▼
 
-   ▼             ▼         ▼            ▼
+┌────────────┐ ┌──────────┐ ┌─────────┐ ┌───────────┐
+│ Cartógrafo │ │ Mecánico │ │ Piloto  │ │  Orador   │
+│ biblioteca │ │  taller   │ │ parking │ │ snapshot  │
+└────────────┘ └──────────┘ └─────────┘ └───────────┘
+  bot-biblioteca  bot-taller   bot-parking   bot-volatil
 
-┌──────┐    ┌───────┐  ┌──────────┐
-│ mapa │ ⇄  │ viaje │  │ snapshot │
-└──────┘    └───────┘  └──────────┘
-
-   (cada uno apunta a los otros dos + back-to-orquestador)
+(cada sub-agente apunta a los otros tres + back-to-orquestador)
 
 ```
 
-**Botones que aparecerán al terminar cada respuesta**:
+**Botones que aparecerán al terminar cada respuesta** (handoffs):
 
-- En `bot-hilbert` (principal): "Crear/extender dossier (modo mapa)" - "Navegar dossier existente (modo viaje)" - "Snapshot al vuelo (sin disco)"
+- En `bot-hilbert` (superavatar): "Cartógrafo · cultivar mapa" — "Mecánico · construir/reparar nave" — "Piloto · viajar dossier" — "Orador · snapshot volátil" — "Cristalizar".
 
-- En `mapa`: "Navegar este dossier (viaje)" - "Snapshot volátil al vuelo" - "Volver a Bot-Hilbert (orquestador)"
+- En `bot-biblioteca` (Cartógrafo): "Mecánico · taller" — "Piloto · viajar este dossier" — "Orador · snapshot" — "Cristalizar" — "Volver al orquestador".
 
-- En `viaje`: "Pasar a mapa (extender dossier)" - "Snapshot volátil" - "Volver a Bot-Hilbert"
+- En `bot-taller` (Mecánico): "Cartógrafo · cultivar mapa" — "Piloto · viajar dossier" — "Orador · snapshot" — "Cristalizar" — "Volver al orquestador".
 
-- En `snapshot`: "Persistir este snapshot como dossier" - "Abrir dossiers existentes (viaje)" - "Volver a Bot-Hilbert"
+- En `bot-parking` (Piloto): "Cartógrafo · extender dossier" — "Mecánico · nave que falta" — "Orador · snapshot" — "Cristalizar itinerario (rama nativa)" — "Cristalizar mapa/nave/customization" — "Volver al orquestador".
 
-**Tools por modo** (principio de menor privilegio):
+- En `bot-volatil` (Orador): "Cartógrafo · persistir snapshot" — "Mecánico · construir nave detectada" — "Piloto · viajar dossier existente" — "Volver al orquestador".
 
-- `mapa`: `[read, search, edit, execute, web, todo]`
+**Tools por sub-agente** (principio de menor privilegio):
 
-- `viaje`: `[read, search, web, todo]` --- sin `edit`/`execute`
+- `bot-hilbert` (superavatar), `bot-biblioteca` (Cartógrafo), `bot-taller` (Mecánico): `[read, search, edit, execute, web, todo]`
 
-- `snapshot`: `[read, search, web, todo]` --- igual que viaje pero el prompt prohíbe escribir
+- `bot-parking` (Piloto): `[read, search, web, todo]` — sin `edit`/`execute`; escritura permitida solo a `itinerarios/`
+
+- `bot-volatil` (Orador): `[read, search, web, todo]` — el prompt prohíbe escribir
 
 Todos los handoffs llevan `send: false` para que tú revises el prompt antes de enviar. Si quieres alguno con `send: true` (auto-submit), dime cuál.
 

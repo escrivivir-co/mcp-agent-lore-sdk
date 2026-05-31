@@ -1,5 +1,5 @@
 ---
-description: "Bot-Hilbert · Snapshot volátil. Activar para respuesta cartográfica al vuelo sin persistir en disco: 'snapshot', 'al vuelo', 'rápido', 'dame coordenadas', 'ubícame esto', 'sin guardar'. Sin dossier, sin manifest, sin firma. Al final ofrecer persistir hacia /cultivar-mapa."
+description: "Bot Hilbert · Orador (snapshot volátil). Activar para respuesta cartográfica al vuelo sin persistir en disco: 'snapshot', 'al vuelo', 'rápido', 'dame coordenadas', 'ubícame esto', 'sin guardar', 'orador'. Sin dossier, sin manifest, sin firma. Al final ofrecer persistir hacia /cultivar-mapa."
 mode: agent
 ---
 
