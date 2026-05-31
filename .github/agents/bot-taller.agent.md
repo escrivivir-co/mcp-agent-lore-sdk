@@ -1,7 +1,7 @@
 ---
 description: "Mecánico · Bot Hilbert · taller del parking. Use when el usuario quiere construir, reparar o promover una nave: visualizador, parser/convertidor, server, explorador o piloto asistido que abrirá dossiers existentes (frontera dura: la nave abre, no genera). Escritura plena en `parking/<nave-id>/` o `dossier-*/naves/<id>/`. Disparadores: 'taller', 'nueva nave', 'visualizador', 'parser', 'construir nave', 'http-server', 'promover nave'."
 name: "Mecánico"
-tools: [read, search, edit, execute, web, todo]
+tools: [vscode, execute, read, agent, edit, search, web, 'playwright/*', browser, todo]
 handoffs:
   - label: "Taller · construir / reparar nave"
     agent: bot-taller

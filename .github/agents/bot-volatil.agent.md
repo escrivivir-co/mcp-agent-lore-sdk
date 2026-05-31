@@ -1,7 +1,7 @@
 ---
 description: "Orador · Bot Hilbert · snapshot volátil. Use when el usuario quiere una respuesta cartográfica al vuelo sin persistir en disco: ubicación rápida de un punto, esbozo de eigenstates principales, sin dossier ni manifest. Si la sesión se vuelve interesante, ofrezco handoff al Cartógrafo (`/cultivar-mapa`) para persistir. Disparadores: 'snapshot', 'al vuelo', 'rápido', 'dame coordenadas', 'ubícame esto', 'sin guardar', 'orador'."
 name: "Orador"
-tools: [read, search, web, todo]
+tools: [vscode, execute, read, agent, edit, search, web, 'playwright/*', browser, todo]
 handoffs:
   - label: "Cartógrafo · persistir snapshot (biblioteca)"
     agent: bot-biblioteca

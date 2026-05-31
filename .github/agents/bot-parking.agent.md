@@ -1,7 +1,7 @@
 ---
 description: "Piloto · Bot Hilbert · garaje y pista del parking. Use when el usuario quiere navegar dossiers existentes sin modificarlos: ubicar un punto, recorrer ergosferas y horizontes de sucesos, saltar a sub-espacios o ascender a holones mayores. Solo lectura sobre la sede; escritura permitida únicamente en `itinerarios/<fecha>-<sesión>.md` del dossier visitado. Disparadores: 'viajar', 'navegar dossier', 'abrir dossier', 'explorar mapa', 'ubicarme', 'ergosferas', 'horizontes de sucesos', 'itinerario', 'piloto'."
 name: "Piloto"
-tools: [read, search, web, todo]
+tools: [vscode, execute, read, agent, edit, search, web, 'playwright/*', browser, todo]
 handoffs:
   - label: "Viajar dossier (con o sin nave)"
     agent: bot-parking

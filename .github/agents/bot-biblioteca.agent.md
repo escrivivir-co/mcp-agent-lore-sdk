@@ -1,7 +1,7 @@
 ---
 description: "Cartógrafo · Bot Hilbert · biblioteca. Use when el usuario quiere crear o extender un dossier de mapa Hilbert sobre un tema (cartografiar): `dossier-<tema>-v00-<tag>/` con `mapa.<formato>`, `itinerarios/`, manifest. Escritura plena en la sede. Cartógrafo, Bot Hilbert, ábreme el Hilbert de…, dossier, mapa, biblioteca, cultivar mapa, .meta."
 name: "Cartógrafo"
-tools: [read, search, edit, execute, web, todo]
+tools: [vscode, execute, read, agent, edit, search, web, 'playwright/*', browser, todo]
 handoffs:
   - label: "Cultivar mapa (nuevo dossier / extender)"
     agent: bot-biblioteca
