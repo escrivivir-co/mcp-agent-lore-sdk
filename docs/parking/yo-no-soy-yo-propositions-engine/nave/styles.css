@@ -678,6 +678,93 @@ th {
 #content p { margin-bottom: 1em; }
 #content img { max-width: 100%; height: auto; border: 2px solid var(--ink); margin-top: 10px; }
 #content h1, #content h2, #content h3 { border-bottom: 2px solid var(--ink); padding-bottom: 5px; margin-top: 1.5em; margin-bottom: 0.5em; }
+
+/* -------- nav dropdown ---------------------------------------------- */
+.nav-dropdown {
+  position: relative;
+  flex: 1 1 auto;
+}
+.nav-dropdown-toggle {
+  width: 100%;
+  display: block;
+  border-right: 0;
+}
+.nav-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 100;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.nav-dropdown-menu .nav-link {
+  flex: unset;
+  border-right: 0;
+  border-bottom: 1px dashed var(--ink);
+  text-align: left;
+}
+.nav-dropdown-menu .nav-link:last-child { border-bottom: 0; }
+
+/* -------- lightbox -------------------------------------------------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.92);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lightbox img {
+  max-width: min(900px, 90vw);
+  max-height: 75vh;
+  object-fit: contain;
+  border: 3px solid #fff;
+  display: block;
+}
+.lightbox-caption {
+  color: #eee;
+  font-size: 13px;
+  margin-top: 14px;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.5;
+}
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.lightbox-close:hover { background: #fff; color: #000; }
+
+/* -------- crossref pills -------------------------------------------- */
+.crossref-pill {
+  display: inline-block;
+  border: 1px solid var(--ink);
+  padding: 2px 7px;
+  font-size: 11px;
+  background: var(--paper);
+  font-family: inherit;
+}
+.crossref-pill--alias {
+  border-style: dashed;
+  color: #005cc5;
+  border-color: #005cc5;
+}
 #content blockquote { border-left: 4px solid var(--ink); padding-left: 1em; font-style: italic; background: var(--paper-2); padding-top: 0.5em; padding-bottom: 0.5em; margin-bottom: 1em; }
 #content ul { padding-left: 22px; margin-bottom: 1em; }
 #content li { margin-bottom: 0.5em; }

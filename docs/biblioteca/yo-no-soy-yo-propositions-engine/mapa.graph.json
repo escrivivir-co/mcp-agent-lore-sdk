@@ -1,36 +1,365 @@
 {
   "nodes": [
-    { "id": "E1", "type": "eigen", "title": "Comunalismo anti-sustitucionista", "layer": "thread1" },
-    { "id": "E2", "type": "eigen", "title": "Estatismo de escala", "layer": "thread1" },
-    { "id": "E3", "type": "eigen", "title": "Consejismo / sovietismo de base", "layer": "thread1" },
-    { "id": "E4", "type": "eigen", "title": "Marxismo-leninismo", "layer": "thread1" },
-    { "id": "E5", "type": "eigen", "title": "Delegación asamblearia", "layer": "thread1" },
-    { "id": "E6", "type": "eigen", "title": "Anarquismo-telos", "layer": "thread1" },
-    { "id": "E7", "type": "eigen", "title": "Anarquismo como método", "layer": "thread1" },
-    { "id": "E8", "type": "eigen", "title": "Marx anti-anarquista", "layer": "thread1" },
-    { "id": "E9", "type": "eigen", "title": "Solarpunk anti-gubernamental", "layer": "thread1" },
-    { "id": "E10", "type": "eigen", "title": "Planificación central", "layer": "thread1" },
-    { "id": "E11", "type": "eigen", "title": "Municipalismo libertario", "layer": "thread1" },
+    {
+      "id": "E1", "type": "eigen", "title": "Comunalismo anti-sustitucionista",
+      "layer": "thread1",
+      "axioms": "El 'comunismo de Estado' sólo recambia colores; la comuna y la comunidad organizada son el cambio real",
+      "reference": "@GNortania, May 28, 2026",
+      "forks": ["⥱ a Marx/Engels/Lenin"]
+    },
+    {
+      "id": "E2", "type": "eigen", "title": "Estatismo de escala",
+      "layer": "thread1",
+      "axioms": "Infraestructura compleja exige representación, división funcional y, de facto, Estado",
+      "reference": "@Octaviots, May 28; Weber Economy and Society 1922; Michels Political Parties 1911",
+      "forks": []
+    },
+    {
+      "id": "E3", "type": "eigen", "title": "Consejismo / sovietismo de base",
+      "layer": "thread1",
+      "axioms": "Coordinación posible vía consejos federados; soviet = consejo",
+      "reference": "Pannekoek Workers' Councils 1947; Gorter Open Letter 1920; † Castoriadis Socialisme ou Barbarie 1949-66",
+      "forks": ["⟲ contra E4 en nombre de Marx"]
+    },
+    {
+      "id": "E4", "type": "eigen", "title": "Marxismo-leninismo / Estado transitorio",
+      "layer": "thread1",
+      "axioms": "El Estado socialista es necesario como forma transitoria hacia su extinción",
+      "reference": "Lenin El Estado y la revolución 1917; Engels Anti-Dühring 1878 III.2",
+      "forks": ["⊘ (Marx †1883)", "⟲ contra E3", "⟲ contra E7"]
+    },
+    {
+      "id": "E5", "type": "eigen", "title": "Delegación participativa / asamblearia",
+      "layer": "thread1",
+      "axioms": "'Si quieres que el gobierno haga algo, vuélvete gobierno participando'; representación fundada en participación",
+      "reference": "@GNortania, May 28; Marx La guerra civil en Francia 1871 III",
+      "forks": ["⊢ parcial (Marx 1871)"]
+    },
+    {
+      "id": "E6", "type": "eigen", "title": "Anarquismo como antiestatismo final (telos)",
+      "layer": "thread1",
+      "axioms": "Si el fin último es abolir el Estado, cualquiera que comparta ese fin es anarquista",
+      "reference": "@Octaviots, May 29",
+      "forks": ["⥱ sobre Marx → choca con ⊬ documentado"]
+    },
+    {
+      "id": "E7", "type": "eigen", "title": "Anarquismo como crítica de autoridad y método",
+      "layer": "thread1",
+      "axioms": "El anarquismo no se reduce al fin; rechaza el Estado, el partido y la autoridad jerárquica como medio",
+      "reference": "Bakunin Estatismo y anarquía 1873; Kropotkin La conquista del pan 1892",
+      "forks": ["⊬ mutuo con E4; Congreso La Haya AIT 1872"]
+    },
+    {
+      "id": "E8", "type": "eigen", "title": "Marx anti-anarquista documental",
+      "layer": "thread1",
+      "axioms": "Marx polemiza con Proudhon, Stirner y Bakunin; impulsa expulsión de Bakunin de la AIT",
+      "reference": "Marx La miseria de la filosofía 1847; Actas Congreso La Haya AIT sept 1872",
+      "forks": ["Núcleo de evidencia para los ⊬"]
+    },
+    {
+      "id": "E9", "type": "eigen", "title": "Solarpunk anti-gubernamental",
+      "layer": "thread1",
+      "axioms": "'Real solarpunk doesn't have government'; el gobierno es siempre autoritarismo",
+      "reference": "root-question.png; † Williams 'Solarpunk: Notes toward a manifesto' 2008",
+      "forks": ["⊬ interno del propio solarpunk fundacional"]
+    },
+    {
+      "id": "E10", "type": "eigen", "title": "Planificación central eco-socialista",
+      "layer": "thread1",
+      "axioms": "Transición ecológica anti-capitalista requiere coordinación a escala; China como ejemplo polémico",
+      "reference": "root-question.png; Beer Brain of the Firm 1972; Proyecto Cybersyn Chile 1971-73",
+      "forks": ["⥱ débil sobre Marx (⊘)"]
+    },
+    {
+      "id": "E11", "type": "eigen", "title": "Comunalismo libertario / municipalismo",
+      "layer": "thread1",
+      "axioms": "Federación de municipios libres como tercer camino entre Estado y mercado",
+      "reference": "Bookchin The Ecology of Freedom 1982; Öcalan Confederalismo democrático 2011; Rojava 2012–",
+      "forks": ["⊬ mutuo con E4", "⊬ mutuo con E9 puro"]
+    },
 
-    { "id": "T1", "type": "eigen", "title": "Marx histórico", "layer": "thread2" },
-    { "id": "T2", "type": "eigen", "title": "Engels codificador", "layer": "thread2" },
-    { "id": "T3", "type": "eigen", "title": "Marxistes français", "layer": "thread2" },
-    { "id": "T4", "type": "eigen", "title": "Ortodoxia 2da Int.", "layer": "thread2" },
-    { "id": "T5", "type": "eigen", "title": "Revisionismo", "layer": "thread2" },
-    { "id": "T6", "type": "eigen", "title": "Leninismo/ML", "layer": "thread2" },
-    { "id": "T7", "type": "eigen", "title": "Comunismo consejos", "layer": "thread2" },
-    { "id": "T8", "type": "eigen", "title": "Escuela Frankfurt", "layer": "thread2" },
-    { "id": "T9", "type": "eigen", "title": "Marxismo estructural", "layer": "thread2" },
-    { "id": "T10", "type": "eigen", "title": "Marxismo analítico", "layer": "thread2" },
-    { "id": "T11", "type": "eigen", "title": "Post-marxismo", "layer": "thread2" },
-    { "id": "T12", "type": "eigen", "title": "Marxismos no-occ", "layer": "thread2" },
+    {
+      "id": "T1", "type": "eigen", "title": "Marx histórico",
+      "layer": "thread2",
+      "axioms": "Crítica de la economía política; materialismo histórico como método; horizonte comunista",
+      "reference": "Marx El capital 1867; Marx & Engels La ideología alemana 1845-46; Marx Grundrisse 1857-58",
+      "forks": []
+    },
+    {
+      "id": "T2", "type": "eigen", "title": "Engels codificador",
+      "layer": "thread2",
+      "axioms": "Sistematiza, populariza; introduce vocabulario 'socialismo científico'",
+      "reference": "Engels Anti-Dühring 1878; Engels Del socialismo utópico al científico 1880",
+      "forks": ["⊢ en vida (Marx aprueba Anti-Dühring)"]
+    },
+    {
+      "id": "T3", "type": "eigen", "title": "Marxistes français (Lafargue/Guesde)",
+      "layer": "thread2",
+      "axioms": "Lectura programática reductora del materialismo histórico",
+      "reference": "Lafargue El derecho a la pereza 1880; † Guesde Le Programme du Parti Ouvrier 1880",
+      "forks": ["⊬ directo, en vida — frase de la cita"]
+    },
+    {
+      "id": "T4", "type": "eigen", "title": "Ortodoxia de la Segunda Internacional",
+      "layer": "thread2",
+      "axioms": "Marxismo como programa de partido; lectura evolutiva-historicista",
+      "reference": "Programa de Erfurt SPD 1891; Kautsky El programa de Erfurt 1892",
+      "forks": ["⊘ (Marx †1883)"]
+    },
+    {
+      "id": "T5", "type": "eigen", "title": "Revisionismo bernsteiniano",
+      "layer": "thread2",
+      "axioms": "El capitalismo no colapsa; tránsito gradual al socialismo vía reforma",
+      "reference": "Bernstein Die Voraussetzungen des Sozialismus 1899",
+      "forks": ["⊘ por Marx", "⊬ por Engels", "⟲ con T4"]
+    },
+    {
+      "id": "T6", "type": "eigen", "title": "Marxismo-leninismo",
+      "layer": "thread2",
+      "axioms": "Partido de vanguardia; centralismo democrático; Estado revolucionario transitorio",
+      "reference": "Lenin ¿Qué hacer? 1902; Lenin El Estado y la revolución 1917; Stalin Cuestiones del leninismo 1926",
+      "forks": ["⊘ por Marx", "⟲ mutuo con T4, T5, T7, T8, T9"]
+    },
+    {
+      "id": "T7", "type": "eigen", "title": "Comunismo de consejos",
+      "layer": "thread2",
+      "axioms": "Rechazo del partido-Estado; soviets de base; auto-organización proletaria",
+      "reference": "Pannekoek Workers' Councils 1947; Gorter Open Letter to Comrade Lenin 1920",
+      "forks": ["⊘ por Marx", "⥱ legítima vía La guerra civil en Francia 1871", "⟲ con T6"]
+    },
+    {
+      "id": "T8", "type": "eigen", "title": "Marxismo occidental / Escuela de Frankfurt",
+      "layer": "thread2",
+      "axioms": "Recupera dimensión filosófica, cultural, psicoanalítica; teoría crítica",
+      "reference": "Lukács Historia y conciencia de clase 1923; Horkheimer & Adorno Dialéctica de la Ilustración 1944",
+      "forks": ["⊘ por Marx", "⥱ fuerte hacia Manuscritos de 1844 (pub. 1932)", "⟲ con T6 y T9"]
+    },
+    {
+      "id": "T9", "type": "eigen", "title": "Marxismo estructural (Althusser)",
+      "layer": "thread2",
+      "axioms": "'Corte epistemológico' Marx joven vs Marx maduro; rechaza humanismo de T8",
+      "reference": "Althusser Pour Marx 1965; Althusser & Balibar Lire Le Capital 1965",
+      "forks": ["⊘ por Marx", "⊬-intra: aplica ⊬ dentro de Marx mismo"]
+    },
+    {
+      "id": "T10", "type": "eigen", "title": "Marxismo analítico",
+      "layer": "thread2",
+      "axioms": "Reconstrucción con filosofía analítica y teoría de juegos; abandono de la dialéctica",
+      "reference": "G.A. Cohen Karl Marx's Theory of History 1978; Elster Making Sense of Marx 1985",
+      "forks": ["⊘ por Marx", "⊬ mutuo con T8 y T9"]
+    },
+    {
+      "id": "T11", "type": "eigen", "title": "Post-marxismo / desconstrucción",
+      "layer": "thread2",
+      "axioms": "'Espectros' de Marx, no doctrina; herencia sin programa; hegemonía contingente",
+      "reference": "Derrida Espectros de Marx 1993; Laclau & Mouffe Hegemonía y estrategia socialista 1985",
+      "forks": ["⊘ por Marx", "⊬ declarado contra T6 y T4"]
+    },
+    {
+      "id": "T12", "type": "eigen", "title": "Marxismos no-occidentales",
+      "layer": "thread2",
+      "axioms": "Articulación con tradiciones locales, anticolonialismo, cuestión indígena/nacional",
+      "reference": "Mariátegui Siete ensayos 1928; Fanon Los condenados de la tierra 1961; Mao Sobre la contradicción 1937",
+      "forks": ["⊘ por Marx", "⟲ con T6 ortodoxo soviético"]
+    },
 
-    { "id": "M1", "type": "eigen", "title": "Cita autorrechazante", "layer": "juntura" },
-    { "id": "M2", "type": "eigen", "title": "Metapolítica shitpost", "layer": "juntura" },
-    { "id": "M3", "type": "eigen", "title": "Tautología epónima", "layer": "juntura" },
+    {
+      "id": "M1", "type": "eigen", "title": "Cita autorrechazante de Marx",
+      "layer": "juntura",
+      "axioms": "Marx desautoriza a los 'marxistes français' que usan el materialismo histórico como pretexto para no estudiar historia",
+      "reference": "Engels carta a Schmidt 5 ago 1890 MEW 37:436; Engels carta a Bernstein 2-3 nov 1882 MEW 35:388",
+      "forks": ["⊬ de Marx sobre una derivación nominal suya"]
+    },
+    {
+      "id": "M2", "type": "eigen", "title": "Metapolítica del shitpost",
+      "layer": "juntura",
+      "axioms": "El chiste arrastra una línea política implícita; la forma cómica no neutraliza la proposición política",
+      "reference": "thread-main-refutation.png (Reigen / Mob Psycho 100); † Davison The Language of Jokes 1992",
+      "forks": []
+    },
+    {
+      "id": "M3", "type": "eigen", "title": "Tautología epónima",
+      "layer": "juntura",
+      "axioms": "El nombre del campo garantiza la identidad doctrinal del epónimo",
+      "reference": "@facu_az0gue May 29; thread-root-question.png (Cunk)",
+      "forks": ["objeto a refutar por M1"]
+    },
 
-    { "id": "Root", "type": "context", "title": "Root Question Meme", "layer": "context" },
-    { "id": "N0", "type": "context", "title": "Marx Oral", "layer": "context" }
+    { "id": "Root", "type": "context", "title": "Root Question Meme", "layer": "context",
+      "axioms": "Meme de Twitter/X con pregunta sobre solarpunk y socialismo", "reference": "root-question.png", "forks": [] },
+    { "id": "N0", "type": "context", "title": "Marx Oral ~1882", "layer": "context",
+      "axioms": "Enunciado de Marx recogido por Engels; origen de la cita 'je ne suis pas marxiste'", "reference": "Engels cartas 1882, 1890", "forks": [] },
+
+    {
+      "id": "R1", "type": "eigen", "title": "Marx / Engels — socialismo científico",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Materialismo histórico; lucha de clases; propiedad colectiva medios de producción; dictadura del proletariado como fase transitoria; el Estado se 'extingue'",
+      "reference": "Marx El Capital 1867; Marx & Engels Manifiesto Comunista 1848",
+      "forks": [], "crossref": "T1"
+    },
+    {
+      "id": "R2", "type": "eigen", "title": "Socialdemocracia (Bernstein/Kautsky)",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Revolución innecesaria; el socialismo se alcanza por reforma gradual dentro de la democracia parlamentaria",
+      "reference": "Bernstein Die Voraussetzungen des Sozialismus 1899; SPD Programa de Erfurt 1891",
+      "forks": [], "crossref": "T5 / T4"
+    },
+    {
+      "id": "R3", "type": "eigen", "title": "Leninismo",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Partido de vanguardia como conciencia de clase organizada; centralismo democrático; revolución necesaria no espontánea",
+      "reference": "Lenin ¿Qué hacer? 1902; Lenin El Estado y la revolución 1917",
+      "forks": [], "crossref": "T6 / E4"
+    },
+    {
+      "id": "R4", "type": "eigen", "title": "Estalinismo / marxismo-leninismo",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Socialismo en un solo país; planificación central total; partido-estado; el Estado no se extingue, se hipertrofia",
+      "reference": "Stalin Cuestiones del leninismo 1926",
+      "forks": [], "crossref": "T6 (variante)"
+    },
+    {
+      "id": "R5", "type": "eigen", "title": "Trotskismo",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Revolución permanente; anti-estalinismo; internacionalismo; estalinismo = traición burocrática",
+      "reference": "Trotski La revolución permanente 1930; Trotski La revolución traicionada 1936",
+      "forks": [], "crossref": "T6 (disidente)"
+    },
+    {
+      "id": "R6", "type": "eigen", "title": "Maoísmo",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Revolución campesina; guerra popular prolongada; revolución cultural permanente",
+      "reference": "Mao Sobre la contradicción 1937; Mao El libro rojo 1964",
+      "forks": [], "crossref": "T12 (parcial)"
+    },
+    {
+      "id": "R7", "type": "eigen", "title": "Luxemburguismo",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Revolución sí pero espontánea y de masas; democracia radical dentro del proceso; crítica a Lenin desde la izquierda",
+      "reference": "Luxemburgo Reforma o revolución 1900; Luxemburgo La revolución rusa 1918 (póstumo)",
+      "forks": ["Bisagra rojo → rojo-negro"], "crossref": null
+    },
+    {
+      "id": "R8", "type": "eigen", "title": "Comunismo de consejos (Pannekoek)",
+      "layer": "rojo-negro", "sub": "rojo",
+      "axioms": "Los consejos obreros como autoorganización; anti-partido; anti-sindicato burocrático",
+      "reference": "Pannekoek Workers' Councils 1947; Gorter Open Letter to Comrade Lenin 1920",
+      "forks": ["Extremo anti-autoritario dentro del marxismo"], "crossref": "E3 / T7"
+    },
+
+    {
+      "id": "N1", "type": "eigen", "title": "Stirner — egoísmo",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "El individuo como único absoluto; toda institución es un 'fantasma'; ni propiedad colectiva ni privada: propiedad del yo",
+      "reference": "Stirner El Único y su propiedad 1844",
+      "forks": ["Extremo individualista del negro"], "crossref": null
+    },
+    {
+      "id": "N2", "type": "eigen", "title": "Proudhon — mutualismo",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "'La propiedad es un robo' (la de renta; no la de uso); federalismo; ni capitalismo ni comunismo",
+      "reference": "Proudhon ¿Qué es la propiedad? 1840; Proudhon El principio federativo 1863",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "N3", "type": "eigen", "title": "Bakunin — colectivismo",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "Destrucción del Estado como condición previa; colectivización medios de producción pero distribución según trabajo",
+      "reference": "Bakunin Estatismo y anarquía 1873; expulsión I Internacional 1872",
+      "forks": ["La fractura Bakunin-Marx es la fractura fundacional del movimiento obrero"], "crossref": "E7 (parcial)"
+    },
+    {
+      "id": "N4", "type": "eigen", "title": "Kropotkin — anarco-comunismo",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "Ayuda mutua como factor de evolución; abolición propiedad privada Y del Estado; distribución según necesidad",
+      "reference": "Kropotkin La conquista del pan 1892; Kropotkin El apoyo mutuo 1902",
+      "forks": ["Bisagra negro → rojo-negro"], "crossref": "E7 / E11"
+    },
+    {
+      "id": "N5", "type": "eigen", "title": "Anarcosindicalismo",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "El sindicato como órgano de lucha Y gestión futura; acción directa; huelga general",
+      "reference": "Carta de Amiens CGT francesa 1906; CNT España fundada 1910",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "N6", "type": "eigen", "title": "Individualismo americano (Tucker/Warren)",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "Anarquismo de mercado libre sin capitalismo; competencia sin monopolio",
+      "reference": "Tucker Instead of a Book 1893; Warren Equitable Commerce 1852",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "N7", "type": "eigen", "title": "Anarquismo insurreccional (Malatesta)",
+      "layer": "rojo-negro", "sub": "negro",
+      "axioms": "Propaganda por el hecho; insurrección como chispa; rechazo de organizaciones formales",
+      "reference": "Malatesta obras 1880s-1920s; † Bonanno Armed Joy 1977",
+      "forks": [], "crossref": null
+    },
+
+    {
+      "id": "RN1", "type": "eigen", "title": "Kropotkin fundacional",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Primer eigenstate que enuncia 'comunismo sin Estado' como programa coherente",
+      "reference": "Kropotkin La conquista del pan 1892",
+      "forks": [], "crossref": "N4"
+    },
+    {
+      "id": "RN2", "type": "eigen", "title": "CNT-FAI / Revolución española (1936-39)",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Colectivizaciones agrarias e industriales autogestionadas; comunas libertarias en Aragón y Cataluña; aplastado por Franco y saboteado por estalinistas",
+      "reference": "Orwell Homenaje a Cataluña 1938; Bolloten The Spanish Civil War 1991",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "RN3", "type": "eigen", "title": "Makhnovshchina (Ucrania, 1918-21)",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Ejército insurreccional campesino; comunas libres; anti-bolchevique Y anti-zarista; aplastado por el Ejército Rojo en 1921",
+      "reference": "Makhno memorias 3 vols 1929-37; Arshinov History of the Makhnovist Movement 1923",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "RN4", "type": "eigen", "title": "Socialismo libertario / Castoriadis",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Autonomía como proyecto; crítica de la burocracia (capitalista Y soviética); imaginario social instituyente",
+      "reference": "Castoriadis La institución imaginaria de la sociedad 1975; Socialisme ou Barbarie 1948-67",
+      "forks": [], "crossref": "E3 (parcial)"
+    },
+    {
+      "id": "RN5", "type": "eigen", "title": "Situacionismo (Debord)",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Sociedad del espectáculo; détournement; revolución como transformación de la vida diaria",
+      "reference": "Debord La sociedad del espectáculo 1967; Internacional Situacionista 1957-72",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "RN6", "type": "eigen", "title": "Autonomismo / Operaísmo (Negri, Tronti)",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "El obrero como sujeto activo; rechazo del trabajo; multitud como nuevo sujeto político",
+      "reference": "Tronti Obreros y capital 1966; Negri & Hardt Imperio 2000",
+      "forks": [], "crossref": null
+    },
+    {
+      "id": "RN7", "type": "eigen", "title": "Rojava / Confederalismo democrático",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Municipalismo libertario; ecología social; feminismo como eje; democracia directa por comunas",
+      "reference": "Bookchin The Ecology of Freedom 1982; Öcalan Democratic Confederalism 2011; Revolución de Rojava 2012–",
+      "forks": [], "crossref": "E11"
+    },
+    {
+      "id": "RN8", "type": "eigen", "title": "Zapatismo (EZLN)",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "'Mandar obedeciendo'; autonomía indígena; anticapitalismo sin toma del poder estatal",
+      "reference": "EZLN Declaraciones de la Selva Lacandona 1994-2005; Holloway Cambiar el mundo sin tomar el poder 2002",
+      "forks": [], "crossref": "T12 (parcial)"
+    },
+    {
+      "id": "RN9", "type": "eigen", "title": "Teología de la liberación anarquista",
+      "layer": "rojo-negro", "sub": "rojo-negro",
+      "axioms": "Conexión cristiana radical con praxis libertaria; comunidades de base como proto-comunas",
+      "reference": "Ellul Anarchy and Christianity 1988; Day Catholic Worker 1933–; Illich Deschooling Society 1971",
+      "forks": [], "crossref": null
+    }
   ],
   "edges": [
     { "source": "Root", "target": "E9", "type": "contains" },
@@ -44,6 +373,7 @@
     { "source": "T1", "target": "E8", "type": "fork-⊬" },
     { "source": "E8", "target": "E7", "type": "fork-⊢" },
     { "source": "E3", "target": "E4", "type": "fork-⟲" },
+    { "source": "E7", "target": "E11", "type": "fork-≈" },
 
     { "source": "N0", "target": "T1", "type": "fork-⊢" },
     { "source": "T1", "target": "T3", "type": "fork-⊬" },
@@ -54,8 +384,54 @@
     { "source": "T6", "target": "T4", "type": "fork-⟲" },
     { "source": "T8", "target": "T9", "type": "fork-⟲" },
     { "source": "T1", "target": "T9", "type": "fork-⊬" },
+    { "source": "T6", "target": "T8", "type": "fork-⟲" },
+    { "source": "T10", "target": "T8", "type": "fork-⊬" },
+    { "source": "T10", "target": "T9", "type": "fork-⊬" },
+    { "source": "T11", "target": "T6", "type": "fork-⊬" },
+    { "source": "T11", "target": "T4", "type": "fork-⊬" },
 
     { "source": "M1", "target": "M3", "type": "fork-⊬" },
-    { "source": "M1", "target": "E6", "type": "bridges" }
-  ]
+    { "source": "M1", "target": "E6", "type": "bridges" },
+    { "source": "M1", "target": "T3", "type": "bridges" },
+    { "source": "M2", "target": "M1", "type": "fork-⊢" },
+
+    { "source": "R1", "target": "T1", "type": "alias" },
+    { "source": "R3", "target": "T6", "type": "alias" },
+    { "source": "R3", "target": "E4", "type": "alias" },
+    { "source": "R8", "target": "E3", "type": "alias" },
+    { "source": "R8", "target": "T7", "type": "alias" },
+    { "source": "N4", "target": "E7", "type": "alias" },
+    { "source": "N4", "target": "E11", "type": "alias" },
+    { "source": "RN7", "target": "E11", "type": "alias" },
+    { "source": "RN4", "target": "E3", "type": "alias" },
+    { "source": "RN8", "target": "T12", "type": "alias" },
+    { "source": "RN1", "target": "N4", "type": "alias" },
+
+    { "source": "R1", "target": "R2", "type": "fork-⊘" },
+    { "source": "R1", "target": "R3", "type": "fork-⊘" },
+    { "source": "R3", "target": "R4", "type": "fork-⊘" },
+    { "source": "R3", "target": "R5", "type": "fork-⟲" },
+    { "source": "R3", "target": "R7", "type": "fork-⊬" },
+    { "source": "R7", "target": "RN2", "type": "fork-≈" },
+    { "source": "R8", "target": "RN4", "type": "fork-≈" },
+
+    { "source": "N3", "target": "N4", "type": "fork-⊢" },
+    { "source": "N4", "target": "RN1", "type": "fork-⊢" },
+    { "source": "RN1", "target": "RN2", "type": "fork-⊢" },
+    { "source": "N5", "target": "RN2", "type": "fork-⊢" },
+    { "source": "RN4", "target": "RN5", "type": "fork-≈" },
+    { "source": "RN7", "target": "RN8", "type": "fork-≈" }
+  ],
+  "meta": {
+    "version": "1.1.0",
+    "dossier": "yo-no-soy-yo-propositions-engine",
+    "layers": ["thread1", "thread2", "juntura", "context", "rojo-negro"],
+    "sublayers": {
+      "rojo-negro": ["rojo", "negro", "rojo-negro"]
+    },
+    "forkSymbols": ["⊢", "⊬", "⊘", "⥱", "⟲", "≈", "†"],
+    "nodeCount": 52,
+    "edgeCount": 54,
+    "signed": "Claude Sonnet 4.6 · 2026-05-31"
+  }
 }

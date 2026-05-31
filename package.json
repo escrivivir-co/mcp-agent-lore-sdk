@@ -9,7 +9,6 @@
     "audit:anchors": "node .github/hooks/audit-anchors.mjs",
     "validate": "npm run audit:anchors",
     "ynsy-engine:start": "npm run ynsy-engine:check && http-server docs -a 127.0.0.1 -p 4174 -c-1",
-    "start:ynsy-engine": "npm run ynsy-engine:start",
     "ynsy-engine:check": "npm run ynsy-engine:dispose",
     "ynsy-engine:dispose": "lsof -t -i:4174 | xargs kill -9 2>/dev/null || true"
   },
