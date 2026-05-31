@@ -21,15 +21,31 @@
       </div>
     </header>
     <nav class="nav" id="main-nav">
-      <a href="#" class="nav-link active" data-target="overview">General</a>
-      <a href="#" class="nav-link" data-target="context">Contexto</a>
+      <a href="#" class="nav-link active" data-target="context">Corpus</a>
+      <a href="#" class="nav-link" data-target="overview">General</a>
+      <a href="#" class="nav-link" data-target="mapa">Mapa</a>
       <a href="#" class="nav-link" data-target="thread1">Thread 1</a>
       <a href="#" class="nav-link" data-target="thread2">Thread 2</a>
+      <a href="#" class="nav-link" data-target="total">Vista Total</a>
     </nav>
-    <main>
+    <main id="main-layout">
       <section class="panel" id="content">
         <p class="loading">Iniciando motor...</p>
       </section>
+      <aside class="sidebar" id="sidebar" style="display: none;">
+        <div class="panel aleph-panel" style="margin-bottom: 14px;">
+          <h3>Capas Aleph</h3>
+          <div id="aleph-controls" class="list" style="font-size: 13px;">
+            <!-- Toggles generados dinámicamente -->
+          </div>
+        </div>
+        <div class="detail-card" id="node-detail" style="display: none;">
+          <h3 id="detail-title">Nodo</h3>
+          <div id="detail-body" style="font-size: 13px; line-height: 1.4;">
+            <p>Haz click en un nodo del mapa para ver detalles.</p>
+          </div>
+        </div>
+      </aside>
     </main>
     <footer class="footer">Nave: yo-no-soy-yo-propositions-engine · SPA mode</footer>
   </div>

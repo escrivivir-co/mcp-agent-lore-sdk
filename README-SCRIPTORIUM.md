@@ -1,10 +1,13 @@
 # Integración con ALEPH Scriptorium
 
+[![GitHub Pages](https://img.shields.io/badge/docs-GitHub_Pages-blue?logo=github)](https://escrivivir-co.github.io/mcp-agent-lore-sdk/)
+
 > **Submódulo**: #18  
   "name": "@aleph-scriptorium/agent-lore-sdk",
   "version": "0.1.0",
   "description": "AGENT-TEMPLATES-1.0.0 + BOT-HILBERT-2.0.0",
 > **Fecha integración**: 2026-06-04
+> **Demo en vivo (GitHub Pages)**: [Explorar Nave "Yo-no-soy-yo"](https://escrivivir-co.github.io/mcp-agent-lore-sdk/parking/yo-no-soy-yo-propositions-engine/nave/)
 
 Doble superficie AgentLoreSDK;
 

@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    { "id": "E1", "type": "eigen", "title": "Comunalismo anti-sustitucionista", "layer": "thread1" },
+    { "id": "E2", "type": "eigen", "title": "Estatismo de escala", "layer": "thread1" },
+    { "id": "E3", "type": "eigen", "title": "Consejismo / sovietismo de base", "layer": "thread1" },
+    { "id": "E4", "type": "eigen", "title": "Marxismo-leninismo", "layer": "thread1" },
+    { "id": "E5", "type": "eigen", "title": "Delegación asamblearia", "layer": "thread1" },
+    { "id": "E6", "type": "eigen", "title": "Anarquismo-telos", "layer": "thread1" },
+    { "id": "E7", "type": "eigen", "title": "Anarquismo como método", "layer": "thread1" },
+    { "id": "E8", "type": "eigen", "title": "Marx anti-anarquista", "layer": "thread1" },
+    { "id": "E9", "type": "eigen", "title": "Solarpunk anti-gubernamental", "layer": "thread1" },
+    { "id": "E10", "type": "eigen", "title": "Planificación central", "layer": "thread1" },
+    { "id": "E11", "type": "eigen", "title": "Municipalismo libertario", "layer": "thread1" },
+
+    { "id": "T1", "type": "eigen", "title": "Marx histórico", "layer": "thread2" },
+    { "id": "T2", "type": "eigen", "title": "Engels codificador", "layer": "thread2" },
+    { "id": "T3", "type": "eigen", "title": "Marxistes français", "layer": "thread2" },
+    { "id": "T4", "type": "eigen", "title": "Ortodoxia 2da Int.", "layer": "thread2" },
+    { "id": "T5", "type": "eigen", "title": "Revisionismo", "layer": "thread2" },
+    { "id": "T6", "type": "eigen", "title": "Leninismo/ML", "layer": "thread2" },
+    { "id": "T7", "type": "eigen", "title": "Comunismo consejos", "layer": "thread2" },
+    { "id": "T8", "type": "eigen", "title": "Escuela Frankfurt", "layer": "thread2" },
+    { "id": "T9", "type": "eigen", "title": "Marxismo estructural", "layer": "thread2" },
+    { "id": "T10", "type": "eigen", "title": "Marxismo analítico", "layer": "thread2" },
+    { "id": "T11", "type": "eigen", "title": "Post-marxismo", "layer": "thread2" },
+    { "id": "T12", "type": "eigen", "title": "Marxismos no-occ", "layer": "thread2" },
+
+    { "id": "M1", "type": "eigen", "title": "Cita autorrechazante", "layer": "juntura" },
+    { "id": "M2", "type": "eigen", "title": "Metapolítica shitpost", "layer": "juntura" },
+    { "id": "M3", "type": "eigen", "title": "Tautología epónima", "layer": "juntura" },
+
+    { "id": "Root", "type": "context", "title": "Root Question Meme", "layer": "context" },
+    { "id": "N0", "type": "context", "title": "Marx Oral", "layer": "context" }
+  ],
+  "edges": [
+    { "source": "Root", "target": "E9", "type": "contains" },
+    { "source": "Root", "target": "E10", "type": "contains" },
+    { "source": "E9", "target": "E1", "type": "fork-⊬" },
+    { "source": "E1", "target": "T1", "type": "fork-⥱" },
+    { "source": "E2", "target": "E4", "type": "fork-⊢" },
+    { "source": "T1", "target": "E5", "type": "fork-⊢" },
+    { "source": "E5", "target": "E3", "type": "fork-⊢" },
+    { "source": "E6", "target": "T1", "type": "fork-⥱" },
+    { "source": "T1", "target": "E8", "type": "fork-⊬" },
+    { "source": "E8", "target": "E7", "type": "fork-⊢" },
+    { "source": "E3", "target": "E4", "type": "fork-⟲" },
+
+    { "source": "N0", "target": "T1", "type": "fork-⊢" },
+    { "source": "T1", "target": "T3", "type": "fork-⊬" },
+    { "source": "T1", "target": "T2", "type": "fork-⊢" },
+    { "source": "T2", "target": "T4", "type": "fork-⊘" },
+    { "source": "T4", "target": "T5", "type": "fork-⟲" },
+    { "source": "T6", "target": "T7", "type": "fork-⟲" },
+    { "source": "T6", "target": "T4", "type": "fork-⟲" },
+    { "source": "T8", "target": "T9", "type": "fork-⟲" },
+    { "source": "T1", "target": "T9", "type": "fork-⊬" },
+
+    { "source": "M1", "target": "M3", "type": "fork-⊬" },
+    { "source": "M1", "target": "E6", "type": "bridges" }
+  ]
+}

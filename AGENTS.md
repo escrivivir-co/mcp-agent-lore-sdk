@@ -1,4 +1,4 @@
-# AGENTS.md — REFUTADOR · sede de Bot-Hilbert
+# AGENTS.md — sede de Bot-Hilbert
 
 Sede in-repo del agente cartógrafo **Bot-Hilbert** (suite Scriptorium). Este archivo es el puntero que leen automáticamente plataformas como Copilot CLI, Codex, Cursor o Claude Code al entrar en el workspace.
 

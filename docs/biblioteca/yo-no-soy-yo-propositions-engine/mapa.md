@@ -1,6 +1,6 @@
 # Yo-no-soy-yo Propositions Engine
 
-**Versión:** 0.1.0 | **Autor:** Escrivivir.co  
+**Versión:** 1.0.0 | **Autor:** Escrivivir.co  
 **Producto integrado en:** [ALEPH Scriptorium](https://github.com/escrivivir-co/aleph-scriptorium/tree/integration/beta/scriptorium/bot-hilbert) (Submódulo #18)
 
 Este mapa cartografía el debate sobre marxismo, anarquismo, comunas y estado a partir de los hilos originales de redes sociales. 
@@ -10,6 +10,24 @@ Es una nave-demostración de las capacidades cartográficas del **Bot Hilbert v2
 ### 📜 Licencia y Guías FOSS
 Este proyecto es software libre y de código abierto (FOSS). Hereda la **Animus Iocandi Public License** de Aleph Scriptorium (ver `LICENSE.md`).  
 Para guías de contribución y directrices de desarrollo abierto, consulta `CONTRIBUTING.md`.
+
+---
+
+## 0. Leyenda operativa de la capa `yo-no-soy-yo`
+
+Símbolos de **fork** (relación padre ⇄ derivación):
+
+| Símbolo | Significado | Lectura |
+|---|---|---|
+| `⊢`  | fork aceptado / lineal | El "padre" lo reconocería como continuación legítima |
+| `⊬`  | **fork rechazado explícitamente** | El padre se autoexcluye ("yo no soy yo") con cita verificable |
+| `⊘`  | fork póstumo / no juzgado | El padre murió antes; no hay acto de aceptación ni rechazo |
+| `⥱`  | atribución retroactiva | El descendiente (o un tercero) reclama paternidad que el padre no firmó |
+| `⟲`  | fork-vs-fork en nombre del padre | Dos derivaciones se combaten entre sí invocando al mismo padre |
+| `≈`  | parecido sin filiación | Cognación temática sin línea genealógica directa |
+| `†`  | eigenstate probablemente desconocido por el usuario | (heredado del cartógrafo base) |
+
+Estas marcas **no juzgan la verdad** de cada fork. Marcan la **operación de filiación** que hace cada actor y el grado de respaldo documental que esa operación tiene.
 
 ---
 
@@ -88,190 +106,234 @@ Para guías de contribución y directrices de desarrollo abierto, consulta `CONT
 
 ## 2. Cartografía Thread 1 — Comuna, infraestructura, Estado y Marx
 
-```text
-CARTOGRAFO — Campo: Thread 1 — comuna, infraestructura, Estado y Marx
-Eigenstates detectados: 10
-Sub-espacios: 4 (imaginario eco-socialista -> escala/infraestructura -> forma politica -> genealogia Marx/anarquismo)
-```
+El hilo presenta cuatro preguntas superpuestas, pero el conflicto principal es un conflicto de filiaciones: la operación `⥱` (atribución retroactiva) "Marx era anarquista" seguida de la legitimación `⊢` del leninismo como continuación.
 
-### Lectura inicial
-El thread no discute solo si Marx era o no anarquista. El campo real tiene cuatro preguntas superpuestas:
-1. Si una alternativa anti-capitalista puede rechazar gobierno y planificacion central sin quedarse en estetica.
-2. Como se construye infraestructura a escala comunal.
-3. Si la coordinacion a gran escala exige Estado, representacion o consejos federados.
-4. Si perseguir la desaparicion final del Estado convierte a Marx en anarquista.
+### Eigenstates (E1-E11)
+
+| # | Eigenstate | Forks |
+|---|---|---|
+| E1 | **Comunalismo anti-sustitucionista** | Reclama a Marx/Engels/Lenin (⥱) |
+| E2 | **Estatismo de escala** | — |
+| E3 | **Consejismo / sovietismo de base** | `⟲` contra E4 en nombre de Marx |
+| E4 | **Marxismo-leninismo / Estado transitorio** | `⊘` (Marx murió 1883); `⟲` contra E3 y E7 |
+| E5 | **Delegación participativa / asamblearia** | `⊢` parcial (Marx 1871 lo respaldaría) |
+| E6 | **Anarquismo como antiestatismo final (telos)** | `⥱` sobre Marx ⇒ choca con `⊬` documentado |
+| E7 | **Anarquismo como crítica de autoridad y método** | `⊬` mutuo con E4 documentado en 1872 |
+| E8 | **Marx anti-anarquista documental** | Bloquea E6 con dato duro |
+| E9 | **Solarpunk anti-gubernamental** | `⊬` interno del propio solarpunk |
+| E10 | **Planificación central eco-socialista** | `⥱` débil sobre Marx (⊘) |
+| E11 † | **Comunalismo libertario / municipalismo** | `⊬` mutuo con E4 y con E9 puro |
 
 ### Mapa relacional
+
 ```text
-                         ESCALA / INFRAESTRUCTURA
-                                  |
-                                  v
-Solarpunk anti-capitalista -> sin gobierno? -----> pregunta material: como se ejecuta?
-                                  |                                  |
-                                  v                                  v
-                    Pureza anti-autoritaria              Planificacion central
-                                                                     |
-                                                                     v
-        +------------------ Estado de escala ------------------+
-        |                                                      |
-        v                                                      v
-Marxismo-leninismo                                  Consejismo / soviets
-Estado transitorio                                  Consejos federados
-        |                                                      |
-        |                                                      v
-        |                                            Delegacion participativa
-        v                                                      |
-Extincion final del Estado <----------- zona compartida -------+
-        |
-        +--> NO basta para decir "Marx era anarquista"
-                                  |
-                                  v
-                  Anarquismo = antiestatismo + metodo anti-autoritario
+                              [root-question.png]
+                                      │
+            ┌─────────────────────────┴──────────────────────────┐
+            ▼                                                    ▼
+        E9 Solarpunk                                E10 Planificación
+        anti-gubernamental                          central eco-socialista
+            │                                                    │
+            │ ⊬ contra el propio                                 │ ⥱ débil hacia Marx (⊘)
+            │   solarpunk fundacional                            │
+            ▼                                                    ▼
+        E1 Comunalismo ──────────────────────── E2 Estatismo de escala
+        anti-sustitucionista     ⥱ (a Marx)         (Weber/Michels)
+            │                                                    │
+            │                                                    ▼
+            │                                            E4 Marxismo-leninismo
+            │                                            (Lenin 1917)
+            │                                                    │
+            ▼                                                    │
+        E5 Delegación                                            │ ⟲
+        asamblearia ◄────── ⊢ parcial (Marx 1871) ────┐         │
+            │                                          │         ▼
+            └─────────► E3 Consejismo ────────────────┴───── ⟲ ──┘
+                         (Pannekoek/Gorter)
+                                  │
+                                  │ ⟲ Lenin 1920 vs Gorter 1920
+                                  │
+        ──────────────────────────┴──────────────────────────
+                                  │
+                       E6 Anarquismo-telos ──── ⥱ a Marx
+                                  │
+                                  │  ⊬ DOCUMENTADO
+                                  │  (Marx 1847, 1872; AIT La Haya)
+                                  ▼
+                       E8 Marx anti-anarquista
+                                  │
+                                  ▼
+                       E7 Anarquismo como método
+                       (Bakunin 1873; Kropotkin 1892)
+                                  │
+                                  │ ≈ (cognación moderna)
+                                  ▼
+                       E11† Municipalismo libertario
+                       (Bookchin 1982; Öcalan 2011; Rojava 2012–)
 ```
-
-<details>
-<summary><strong>⮟ Aleph 1: Despliegue de los 10 Eigenstates (Thread 1)</strong></summary>
-
-<br>
-
-**1. Comunalismo anti-sustitucionista**
-- **Coordenadas**: Punto de arranque del hilo. Empuja contra el marxismo-leninismo entendido como recambio estatal.
-- **Premisa**: El comunismo no debe limitarse a cambiar un Estado por otro; comuna y comunidad organizada son el núcleo del cambio real.
-
-**2. Estatismo de escala / infraestructura**
-- **Coordenadas**: Tesis funcionalista: la escala genera Estado aunque se use vocabulario comunal.
-- **Premisa**: La infraestructura compleja requiere representación, división de funciones y superestructura; una red de comunas acaba formando algo equivalente a un Estado.
-
-**3. Consejismo soviético**
-- **Coordenadas**: Alternativa a Estado parlamentario y a burocracia de partido; desplaza el eje desde representación electoral hacia delegación/participación obrera.
-- **Premisa**: La infraestructura puede coordinarse mediante consejos obreros de base, federados por barrio, centro de trabajo y niveles sucesivos.
-
-**4. Estado socialista transitorio**
-- **Coordenadas**: Posición marxista-leninista canónica. Comparte con el anarquismo la desaparición final del Estado, pero no el método.
-- **Premisa**: El Estado socialista es necesario, pero como forma histórica transitoria hacia la desaparición del Estado.
-
-**5. Delegación participativa / asamblearia**
-- **Coordenadas**: Bisagra entre comuna, soviet y Estado-comuna. Busca disolver la separación gobernante/gobernado.
-- **Premisa**: La representación no se funda solo en votos, sino en participación directa: si quieres que el gobierno haga algo, participa.
-
-**6. Anarquismo como antiestatismo final**
-- **Coordenadas**: Reducción por telos: identifica anarquismo con objetivo final, no con teoría del medio.
-- **Premisa**: Si el fin último es abolir Estado y sus instituciones asociadas, entonces Marx sería anarquista en sentido teleológico.
-
-**7. Anarquismo como crítica de autoridad y método**
-- **Coordenadas**: Corrige el reduccionismo anterior: método y forma de organización son constitutivos.
-- **Premisa**: Rechaza el uso del Estado, la captura del poder político y la autoridad jerárquica como camino emancipador.
-
-**8. Marx anti-anarquista / ruptura de la Internacional**
-- **Coordenadas**: Eigenstate histórico-documental. Marx no pertenece al linaje anarquista aunque comparta horizonte antiestatal final.
-- **Premisa**: Marx no es anarquista: polemiza con Proudhon, Stirner y Bakunin.
-
-**9. Solarpunk anti-gubernamental / pureza anti-autoritaria**
-- **Coordenadas**: Polo estético-normativo de la imagen raíz. Se aproxima al antiestatismo pero débil ante la infraestructura.
-- **Premisa**: El solarpunk deja de ser real si incluye gobierno, Estado o autoridad central.
-
-**10. Planificación central eco-socialista**
-- **Coordenadas**: Replantea el meme como problema de ejecución material.
-- **Premisa**: La transformación anti-capitalista y ecológica requiere coordinación e inversión a gran escala (planificación central).
-
-</details>
 
 ---
 
 ## 3. Cartografia Thread 2 — Marx, marxismo y "Marx no era marxista"
 
-```text
-CARTOGRAFO — Campo: Thread 2 — Marx, marxismo y "Marx no era marxista"
-Eigenstates detectados: 10
-Sub-espacios: 4 (chiste/identidad -> Marx historico -> marxismos posteriores -> uso dogmatico)
-```
+Toda interpretación del campo depende de qué nivel de la cadena de transmisión se considere "Marx":
+N0 (Marx oral) → N1/N2 (Engels carta) → N3 (Plejánov) → N4 (Lenin) → N5 (Siglo XX) → N6 (@Comradebritt).
 
-### Lectura inicial
-El Thread 2 no discute solo si Marx era marxista. El campo real tiene cuatro preguntas superpuestas:
-1. Si un autor puede identificarse sin mas con el `-ismo` que se forma despues de el.
-2. Que relacion hay entre Marx historico y los marxismos posteriores.
-3. Que significa la frase `Marx no era marxista` en su contexto documental.
-4. Que linea politica queda implicita cuando se usa esa frase para corregir o para desviar el debate del Thread 1.
+### Eigenstates (T1-T12)
+
+| # | Eigenstate | Fork |
+|---|---|---|
+| T1 | **Marx histórico** | (el padre) |
+| T2 | **Engels codificador** | ⊢ en vida |
+| T3 | **Marxistes français (Lafargue/Guesde)** | `⊬` directo, en vida, frase de la cita |
+| T4 | **Ortodoxia de la Segunda Internacional** | `⊘` (Marx †1883) |
+| T5 | **Revisionismo bernsteiniano** | `⊘` por Marx; `⊬` por Engels; `⟲` con T4 |
+| T6 | **Marxismo-leninismo** | `⊘` por Marx; `⟲` mutuo con T4, T5, T7, T8, T9 |
+| T7 | **Comunismo de consejos** | `⊘` por Marx; `⥱` legítima; `⟲` con T6 |
+| T8 | **Marxismo occidental / Escuela de Frankfurt** | `⊘` por Marx; `⥱` fuerte; `⟲` con T6 y T9 |
+| T9 | **Marxismo estructural (Althusser)** | `⊘` por Marx; `⊬-intra` |
+| T10 | **Marxismo analítico** | `⊘` por Marx; `⊬` mutuo con T8 y T9 |
+| T11 | **Post-marxismo / desconstrucción** | `⊘` por Marx; `⊬` declarado contra T6 y T4 |
+| T12 † | **Marxismos no-occidentales** | `⊘` por Marx; `⟲` con T6 |
 
 ### Mapa relacional
-```text
-                         MARX HISTORICO
-                               |
-                               v
-        Critica de la economia politica / materialismo historico
-                               |
-                               v
-                         Engels codifica
-                               |
-              +----------------+----------------+
-              |                                 |
-              v                                 v
- Segunda Internacional / Kautsky        Leninismo / ML posterior
-              |                                 |
-              +----------------+----------------+
-                               |
-                               v
-                       MARXISMOS POSTERIORES
-                               |
-                  +------------+------------+
-                  |                         |
-                  v                         v
-          Marxismo vulgar          Anti-dogmatismo marxiano
-                  |                         |
-                  v                         v
-        "pretexto para no          "estudiar la historia"
-        estudiar la historia"       metodo, no catecismo
 
-NO se sigue:
-Marx no era marxista -> Marx era anarquista.
+```text
+                          [N0] MARX ORAL ~1880
+                                  │
+                                  ▼
+                          T1 Marx histórico
+                                  │
+                ┌─────────────────┼─────────────────┐
+                │                 │                 │
+                ▼                 ▼                 ▼
+       T3 Marxistes        T2 Engels         (Manuscritos 1844,
+       français 1880       codificador        Grundrisse)
+       ◄── ⊬ ─── frase           │                 │
+       1882 (vía Engels)         │                 │
+                                 ▼                 │
+                       ╔═════════════════╗         │
+                       ║  MARXISMOS      ║         │
+                       ║  POSTERIORES    ║         │
+                       ║  (todos ⊘)      ║         │
+                       ╚════════╤════════╝         │
+                                │                  │
+        ┌───────────┬───────────┼───────────┬──────┴────┬─────────┐
+        ▼           ▼           ▼           ▼           ▼         ▼
+       T4         T5         T6         T7         T8         T9
+   Kautsky    Bernstein   Lenin/ML   Consejismo  Frankfurt  Althusser
+       │         │           │           │           │         │
+       │ ⟲ ─────┘           │           │           │         │
+       │                    ├── ⟲ ─────┤           │         │
+       │                    └── ⟲ ─────│───────────│─── ⟲ ───┤
+       │                                │           │         │
+       │                                │           └── ⟲ ────┤
+       │                                │                     │
+       │                                │            ⊬-intra  │
+       │                                │            T1-mad ◄┘
+       │                                │
+       │                                │     T10            T11           T12†
+       │                                │   Analítico    Post-marxismo  No-occ.
+       │                                │       │              │            │
+       │                                │       └── ⟲ ─ T8/T9  │            │
+       │                                │                      │            │
+       │                                └─── ⟲ ──────────────────────── T12
 ```
 
-### Resultado cartografico
-La frase `Marx no era marxista` significa, en el campo de este hilo: "Marx no aceptaba que su metodo se convirtiera en una etiqueta cerrada, mecanica o doctrinal." Thread 1 corrigio el salto `antiestatismo final -> anarquismo`. Thread 2 corrige el salto `nombre propio -> identidad doctrinal cerrada`.
+---
 
-<details>
-<summary><strong>⮟ Aleph 2: Despliegue de los 10 Eigenstates (Thread 2)</strong></summary>
+## 4. Vista Total — Thread 2 en Thread 1
 
-<br>
+Thread 2 es una **operación de bloqueo** aplicada sobre la arista `⥱ Marx → anarquismo` de Octavio en Thread 1.
 
-**1. Tautología eponímica: Marx = marxista**
-- **Coordenadas**: Punto cómico de entrada. Señala que la pregunta parece obvia, pero es conceptualmente tramposa.
-- **Premisa**: Si el movimiento se llama marxismo, Marx sería marxista por definición; el nombre del autor parece garantizar la identidad doctrinal.
+### Eigenstates del Injerto
 
-**2. Marx histórico / núcleo teórico**
-- **Coordenadas**: Núcleo primario. No equivale automáticamente a sus codificaciones posteriores.
-- **Premisa**: Marx produce crítica de la economía política y horizonte comunista; no produce un catecismo cerrado llamado marxismo.
+| # | Eigenstate | Función en el mapa total |
+|---|---|---|
+| **M1** | **Cita autorrechazante de Marx** | Munición documental `⊬` de Marx sobre una derivación |
+| **M2** | **Metapolítica del shitpost** | Habilita tratar el meme como objeto cartografiable |
+| **M3** | **Tautología epónima** | Trampa cómica de entrada; objeto a refutar por M1 |
 
-**3. Engels como codificador**
-- **Coordenadas**: Primer puente entre Marx y marxismo como tradición reconocible.
-- **Premisa**: Engels sistematiza, populariza y defiende la obra de Marx; convierte partes del núcleo en exposición doctrinal.
+### Juntura
 
-**4. Marxismo de la Segunda Internacional**
-- **Coordenadas**: Codificación posterior atravesada por partido, programa y coyuntura.
-- **Premisa**: Marxismo como ortodoxia de partido, programa, organización obrera y lectura histórica general.
+```text
+                       MAPA MADRE (Thread 1)
+                              │
+                              │  ... E6 Anarquismo-telos
+                              │       │
+                              │       │ ⥱ (Octavio sobre Marx)
+                              │       ▼
+                              │  ARISTA-DIANA ════════════════════╗
+                              │       │                            ║
+                              │       │ ⊬ documentado (AIT 1872)   ║
+                              │       ▼                            ║
+                              │  E8 Marx anti-anarquista           ║
+                              │                                    ║
+                              ▼                                    ║
+                       ────────────────────────────────────────────╣
+                                  INJERTO THREAD 2                 ║
+                       ────────────────────────────────────────────╣
+                                                                    ║
+            @Comradebritt: "de hecho Marx no era marxista"          ║
+                                  │                                 ║
+                                  ▼                                 ║
+                       M1  Cita ⊬ Marx 1882/1890 ───────────────────╝
+                       (golpea la ARISTA-DIANA por flanco)
+                                  │
+                       ┌──────────┴──────────┐
+                       ▼                     ▼
+                  M2 Metapolítica       M3 Tautología epónima
+                  del shitpost               │
+                       │                     │  ← objeto a corregir
+                       └─────► función ──────┘
+                              de M1
+```
 
-**5. Leninismo / marxismo-leninismo**
-- **Coordenadas**: Hereda el problema del Thread 1: usar el Estado para transitar hacia su extinción.
-- **Premisa**: El marxismo se actualiza mediante partido de vanguardia, Estado revolucionario transitorio y organización centralizada.
+---
 
-**6. Marxismo vulgar / dogmático**
-- **Coordenadas**: Blanco directo de la cita "no soy marxista".
-- **Premisa**: La concepción materialista de la historia se usa como llave universal, atajo explicativo o pretexto para no estudiar la historia.
+## 5. Inventario Consolidado de Forks
 
-**7. Anti-dogmatismo marxiano**
-- **Coordenadas**: Corrección interna al marxismo. Depura su uso mecánico.
-- **Premisa**: Ser fiel a Marx no es repetir fórmulas, sino investigar formaciones históricas concretas; el método pesa más que la etiqueta.
+Se han inventariado un total de **21 forks** a lo largo de los dos hilos, siendo el mapa local de Thread 2 el de mayor densidad. Estos se consultan a través de las vistas Aleph (`aleph-forks`).
 
-**8. Sobrecorrección: Marx no era marxista = Marx no cuenta como marxismo**
-- **Coordenadas**: Error simétrico al de la tautología.
-- **Premisa**: La frase se toma literalmente para separar a Marx de cualquier marxismo o para invalidar toda tradición posterior.
+---
 
-**9. Desliz Thread 1: no marxista-leninista = anarquista**
-- **Coordenadas**: Herencia directa del Thread 1. El Thread 2 bloquea este salto.
-- **Premisa**: Si Marx no coincide con el ML posterior, entonces se lo desplaza hacia el anarquismo por compartir horizonte antiestatal.
+## 6. Ergosferas
 
-**10. Metapolítica del shitpost**
-- **Coordenadas**: Subespacio memético.
-- **Premisa**: El chiste no es neutral: arrastra una línea política implícita que puede ser correcta, incorrecta o confusa aunque el formato sea humorístico.
+Puntos de fuga del mapa hacia otros campos:
 
-</details>
+1. **"yo-no-soy-yo" como género filosófico:** Marx 1882/1890, Wittgenstein, Heidegger, Foucault, Bookchin 1995.
+2. **Planificación cibernética:** Cybersyn, OGAS soviético, debate del cálculo socialista (Mises - Lange - Hayek - Cockshott).
+3. **Rojava / confederalismo democrático:** Fork de Öcalan que `⊬` el marxismo-leninismo y reescribe a Bookchin.
+4. **Marxismos del Sur global (T12):** Mariátegui, Cabral, Sankara, Fanon, Mao temprano.
+
+---
+
+## 7. Capas Aleph (Modulares)
+
+Ver los siguientes módulos en `alephs/` para lecturas específicas del grafo:
+
+- `aleph-historico.md`
+- `aleph-forks.md`
+- `aleph-actores.md`
+- `aleph-cita.md`
+- `aleph-herederos.md`
+- `aleph-joven-vs-maduro.md`
+- `aleph-recursivo.md`
+- `aleph-no-occidental.md`
+- `aleph-juntura.md`
+- `aleph-recursion.md`
+- `aleph-hilo-completo.md`
+
+---
+
+## 8. Etiqueta del Conflicto (Composición Ponderada Consolidada)
+
+```text
+VISTA TOTAL — composición aproximada:
+
+Operación "Marx → -ismo" (atribución y rechazo) ............. 35%
+Núcleo Thread 1 sobre escala / Estado / consejos ............ 35%
+Metapolítica del meme y la cita como arma ................... 15%
+Pureza vs ejecución (solarpunk / planificación) ............. 10%
+Ergosferas no convocadas (Bookchin, Rojava, cibernética) ....  5%
+```

@@ -2,7 +2,7 @@
 
 ### User Input
 
-@[/Users/morente/Desktop/REFUTADOR/general-definition.md] 
+@[//general-definition.md] 
 
 Me ha costado un poco pero con los años he aprendido cómo del "caldo primitivo" de los gnósticos surge el cristianismo que metaboliza la tradición judaica cambiando el "mito" helénico y su recién nacido "logos" aristotélico para dar a luz ese "occidente" que confirma el dicho: "ex-oriente-luz".
 
@@ -18,9 +18,8 @@ Vemos en la actualidad un evangelismo-pentecostalismo que propone la versión de
 
 
 
-*Viewed [general-definition.md](file:///Users/morente/Desktop/REFUTADOR/general-definition.md) *
+*Viewed [general-definition.md](file:////general-definition.md) *
 
-*Listed directory [REFUTADOR](file:///Users/morente/Desktop/REFUTADOR) *
 
 ### Planner Response
 
@@ -82,7 +81,7 @@ Aquí hay un sub-espacio propio con al menos 6-8 eigenstates (martirologio primi
 
 ---
 
-¿Quieres que vuelque esta cartografía en el archivo [cartografia_totalidad.md](file:///Users/morente/Desktop/REFUTADOR/cartografia_totalidad.md)? ¿Abro el sub-espacio de la hagiografía? ¿O prefieres profundizar en algún eigenstate concreto?
+¿Quieres que vuelque esta cartografía en el archivo [cartografia_totalidad.md](file:////cartografia_totalidad.md)? ¿Abro el sub-espacio de la hagiografía? ¿O prefieres profundizar en algún eigenstate concreto?
 
 ### User Input
 
@@ -429,7 +428,7 @@ El judaísmo no *necesita* ser forkeado. Funciona perfecto como lo que es: una r
 
 de acuerdo, observa esta conversación, ¿expresa esta idea: con el skill cartografo hemos escaneado el tema 'cristianismo' y para ello hemos producido el siguiente índice de materiales?
 
-*Viewed [general-definition.md](file:///Users/morente/Desktop/REFUTADOR/general-definition.md) *
+*Viewed [general-definition.md](file:////general-definition.md) *
 
 ### Planner Response
 
@@ -459,7 +458,7 @@ Sí, eso es exactamente lo que hemos hecho. La conversación tiene una estructur
 
 ---
 
-¿Quieres que vuelque todo esto como documento estructurado en [cartografia_totalidad.md](file:///Users/morente/Desktop/REFUTADOR/cartografia_totalidad.md)? Lo compilaría como índice de materiales cartografiados, con enlaces internos entre pasadas y las referencias consolidadas.
+¿Quieres que vuelque todo esto como documento estructurado en [cartografia_totalidad.md](file:////cartografia_totalidad.md)? Lo compilaría como índice de materiales cartografiados, con enlaces internos entre pasadas y las referencias consolidadas.
 
 ### User Input
 
@@ -773,4 +772,4 @@ Por ejemplo, revisa la conversación antes de "buscar la barrera de energía lib
 
 Voy a repasar la conversación y luego escribir el `use-case.md`.
 
-*Viewed [general-definition.md](file:///Users/morente/Desktop/REFUTADOR/general-definition.md) *
+*Viewed [general-definition.md](file:////general-definition.md) *
