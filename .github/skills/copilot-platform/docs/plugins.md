@@ -315,12 +315,12 @@ By default, VS Code discovers plugins from the [copilot-plugins](https://github.
 
 Marketplaces are Git repositories that contain plugin definitions. You can reference them in several formats:
 
-* **Shorthand**: `owner/repo` for public GitHub repositories. For example, `anthropics/claude-code`.
+* **Shorthand**: `owner/repo` for docs GitHub repositories. For example, `anthropics/claude-code`.
 * **HTTPS git remote**: a full URL ending in `.git`. For example, `https://github.com/anthropics/claude-code.git`.
 * **SCP-style git remote**: SSH-style references. For example, `git@github.com:anthropics/claude-code.git`.
 * **file URI**: a `file:///` path to a marketplace repository already cloned on disk.
 
-Private repositories are also supported. If a public lookup fails, VS Code falls back to cloning the repository directly.
+Private repositories are also supported. If a docs lookup fails, VS Code falls back to cloning the repository directly.
 
 Marketplace plugins can also reference external package sources such as npm or PyPI packages. For the full marketplace plugin schema, see the [Claude Code plugin marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces).
 

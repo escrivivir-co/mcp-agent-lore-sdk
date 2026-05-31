@@ -8,7 +8,7 @@ Cubierto por esta política:
 
 - Scripts npm del repo.
 - Hooks y customizations en `.github/**`.
-- Skill `public-web` y contenido bajo `public/`.
+- Skill `docs-web` y contenido bajo `docs/`.
 - Naves o parsers que se añadan al parking.
 
 ## Reportar problemas
@@ -24,7 +24,7 @@ Repositorio matriz: https://github.com/escrivivir-co/aleph-scriptorium/issues
 
 ## Public web
 
-El servidor `public:web` escucha en `127.0.0.1` y está pensado para uso local. Para demos públicas, revisa antes rutas, assets, datos de dossiers y cualquier captura importada desde `ARCHIVO/`.
+El servidor `docs:web` escucha en `127.0.0.1` y está pensado para uso local. Para demos públicas, revisa antes rutas, assets, datos de dossiers y cualquier captura importada desde `ARCHIVO/`.
 
 ## Dependencias
 

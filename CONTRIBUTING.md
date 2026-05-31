@@ -4,7 +4,7 @@ Gracias por cuidar Bot-Hilbert. Este bloque combina customizations de agentes, d
 
 ## Flujo básico
 
-1. Crea una rama con un nombre concreto: `docs/readme-v2`, `skill/public-web`, `dossier/<tema>`.
+1. Crea una rama con un nombre concreto: `docs/readme-v2`, `skill/docs-web`, `dossier/<tema>`.
 2. Instala dependencias:
 
    ```bash
@@ -34,13 +34,13 @@ Cuando toques `.github/agents/**`, `.github/prompts/**`, `.github/instructions/*
 - Dossiers nuevos: `dossier-<tema>-v00-<tag>/` con `mapa.<formato>`, `itinerarios/` y `.meta/manifest.md`.
 - Naves genéricas: `parking/<nave-id>/`.
 - Naves expresas: `dossier-*/naves/<nave-id>/`.
-- Assets web servidos por navegador: `public/`, usando `npm run public:web`.
+- Assets web servidos por navegador: `docs/`, usando `npm run docs:web`.
 
 ## Pull requests
 
 Cada PR debe indicar:
 
-- Qué superficie toca: AgentLoreSDK, Bot-Hilbert, public-web, docs, dossier, nave.
+- Qué superficie toca: AgentLoreSDK, Bot-Hilbert, docs-web, docs, dossier, nave.
 - Qué validación se ejecutó.
 - Si hay migración desde v1 o cambio de formato.
 - Si toca la canónica o solo derivados.

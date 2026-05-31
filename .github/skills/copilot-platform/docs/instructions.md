@@ -170,7 +170,7 @@ applyTo: '**/*.py'
 # Python coding standards
 - Follow the PEP 8 style guide.
 - Use type hints for all function signatures.
-- Write docstrings for public functions.
+- Write docstrings for docs functions.
 - Use 4 spaces for indentation.
 ```
 
